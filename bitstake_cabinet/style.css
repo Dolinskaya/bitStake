@@ -94,21 +94,21 @@ p, h2, h1{
   min-width: 310px;
   z-index: 1;
   position: relative;
-  -webkit-box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
-  -moz-box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
-  box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
+  -webkit-box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
+  -moz-box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
+  box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 }
 .vertiсal{
   flex-direction: column;
 }
 .block{
   background: #fff;
-  padding: 38px 0px 38px 38px;
+  padding: 38px 0 38px 38px;
   border-bottom: 1px solid #dedede;
-  -webkit-box-shadow: 0px 6px 5px -2px rgba(238,238,238,1);
-  -moz-box-shadow: 0px 6px 5px -2px rgba(238,238,238,1);
+  -webkit-box-shadow: 0 6px 5px -2px rgba(238,238,238,1);
+  -moz-box-shadow: 0 6px 5px -2px rgba(238,238,238,1);
   position: relative;
-  box-shadow: 0px 6px 5px -2px rgba(238,238,238,1);
+  box-shadow: 0 6px 5px -2px rgba(238,238,238,1);
 }
 .block-out{
   min-height: 250px;
@@ -160,25 +160,30 @@ p, h2, h1{
 .kard{
   align-items: center;
   width: 350px;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(241,241,241,1);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(241,241,241,1);
-  box-shadow: 0px 3px 6px 0px rgba(241,241,241,1);
+  -webkit-box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
+  -moz-box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
+  box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
   border-bottom: 1px solid #dedede;
 }
-.main_text{
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(241,241,241,1);
-  -moz-box-shadow: 0px 3px 6px 0px rgba(241,241,241,1);
-  box-shadow: 0px 3px 6px 0px rgba(241,241,241,1);
+.caption{
+  -webkit-box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
+  -moz-box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
+  box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
   border-bottom: 1px solid #dedede;
   position: relative;
 }
 .kard-left{
-  -webkit-box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
--moz-box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
-box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
+  -webkit-box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
+-moz-box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
+box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 }
 .kard_content{
   margin-left: 20px;
+}
+.row{
+  width: 680px;
+  margin-left: 20px;
+  border-bottom: 1px solid #dedede;
 }
 .flex-kard{
   display: flex;
@@ -196,6 +201,7 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
 }
 .exit{
   background: #fff;
+  padding: 20px 38px;
 }
 .exit img{
   width: 12px;
@@ -240,10 +246,6 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
   top: -98px;
   left: 16px;
 }
-.main_title{
-  font-family: 'Proxima Nova Bold';
-  font-size: 23px;
-}
 .nav_logo-img{
   width: 36px;
   height: 36px;
@@ -271,17 +273,20 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
   position: relative;
   z-index: 2;
 }
+.main_title-callout{
+  width: 674px !important;
+}
 .main_text p{
   font-family: 'Proxima Nova Light';
   font-size: 14px;
   color: #a6a6a6;
-  padding: 30px;
-  padding-bottom: 17px;
-  padding-top: 17px;
+  padding: 17px 30px;
   background: #fff;
 }
 .left-item img{
   height: 22px;
+  margin-top: 6px;
+  margin-left: 20px;
 }
 .item{
   width: 311px;
@@ -289,8 +294,6 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
   padding-left: 0;
   height: 51px;
   background: #fff;
-  border-bottom: 1px solid #dedede;
-}
 }
 .item a{
   color: #a6a6a6;
@@ -307,7 +310,7 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
   border-bottom: 1px solid #660080;
 }
 .items{
-  min-height: 472px;
+  min-height: 602px;
   background: #fff;
 }
 .main_graph{
@@ -337,9 +340,9 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
 .kard-wrapper{
   min-height: 601px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 6px 6px rgba(241,241,241,1);
-  -moz-box-shadow: 0px 0px 6px 6px rgba(241,241,241,1);
-  box-shadow: 0px 0px 6px 6px rgba(241,241,241,1);
+  -webkit-box-shadow: 0 0 6px 6px rgba(241,241,241,1);
+  -moz-box-shadow: 0 0 6px 6px rgba(241,241,241,1);
+  box-shadow: 0 0 6px 6px rgba(241,241,241,1);
 }
 .item p{
   font-family: 'Proxima Nova Light';
@@ -351,16 +354,11 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
   font-family: 'Proxima Nova Bold';
 }
 .item--hover{
-  width: 353px;
+  width: 735px;
   height: 37px;
-  margin-left: 20px;
+  margin-left: -14px;
   margin-top: 14px;
   position: relative;
-  /*background: #fff;*/
-  /*-webkit-box-shadow: 0px 0px 6px 3px rgba(241,241,241,1);*/
-  /*-moz-box-shadow: 0px 0px 6px 3px rgba(241,241,241,1);*/
-  /*box-shadow: 0px 0px 6px 3px rgba(241,241,241,1);*/
-
   /*-webkit-box-shadow: 0px -6px 9px -5px rgba(241,241,241,1),*/
   /*0px 9px 9px -5px rgba(241,241,241,1),*/
   /*-5px 0px 9px -2px rgba(241,241,241,1);*/
@@ -371,10 +369,16 @@ box-shadow: 6px 0px 5px -2px rgba(238,238,238,1);
   /*0px 9px 9px -5px rgba(241,241,241,1),*/
   /*-5px 0px 9px -2px rgba(241,241,241,1);*/
 }
+.callout{
+  width: 720px;
+}
 .margin{
   margin-right: 54px;
 }
 .relative{
   position: relative;
   bottom: 5px;
+}
+.dinamic-item{
+  margin: auto;
 }
