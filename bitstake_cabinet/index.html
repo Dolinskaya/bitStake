@@ -67,7 +67,7 @@
             </div>
             <div class="header_user">
               <img src="img/user.png" alt="" class="user_logo">
-              <p class="user_name">Здравствуйте, Артем</p>
+              <p class="user_name">Здравствуйте, <span>Артем</span></p>
             </div>
           </div>
           <div class="breadcrumbs flex ma wrap">
@@ -97,7 +97,7 @@
         <h1 class="title wrap ma flex">Мой портфель</h1>
         <div class="main flex ma wrap">
 
-          <div class="kard-wrapper">
+          <div class="">
             <div class="call kard-wrapper">
               <div class="call kard flex-kard main_title">Валюты</div>
               <div class="main_text flex">
@@ -105,35 +105,41 @@
                   <p>Оценка по бирже</p>
               </div>
               <div class="items">
-                <div class="item flex">
-                  <div class="left-item">
-                    <img src="img/item-1.png" alt="">
-                    <p>BitcoIn</p>
-                    <span> (BTC)</span>
+                <div class="item">
+                  <div class="item--hover flex">
+                    <div class="left-item">
+                      <img src="img/item-1.png" alt="">
+                      <p class="relative">BitcoIn</p>
+                      <span class="relative"> (BTC)</span>
+                    </div>
+                    <p class="margin">152.000 руб.</p>
                   </div>
-                  <p>152.000 руб.</p>
                 </div>
-                <div class="item flex">
-                  <div class="left-item">
-                    <img src="img/item-2.png" alt="">
-                    <p>BitcoIn</p>
-                    <span> (BTC)</span>
+                <div class="item">
+                  <div class="item--hover flex">
+                    <div class="left-item">
+                      <img src="img/item-2.png" alt="">
+                      <p class="relative">BitcoIn</p>
+                      <span class="relative"> (BTC)</span>
+                    </div>
+                    <p class="margin">152.000 руб.</p>
                   </div>
-                  <p>152.000 руб.</p>
                 </div>
-                <div class="item flex">
-                  <div class="left-item">
-                    <img src="img/item-3.png" alt="">
-                    <p>BitcoIn</p>
-                    <span> (BTC)</span>
+                <div class="item">
+                  <div class="item--hover flex">
+                    <div class="left-item">
+                      <img src="img/item-3.png" alt="">
+                      <p class="relative">BitcoIn</p>
+                      <span class="relative"> (BTC)</span>
+                    </div>
+                    <p class="margin">152.000 руб.</p>
                   </div>
-                  <p>152.000 руб.</p>
                 </div>
               </div>
             </div>
           </div>
           <!-- вторая колонка -->
-          <div class="kard-wrapper">
+          <div class="">
             <div class="call kard-wrapper">
             <div class="call kard flex-kard main_title">Динамика Bitcoin</div>
               <div class="main_graph">
@@ -164,7 +170,7 @@
             </div>
           </div>
           <!-- третья -->
-          <div class="kard-wrapper">
+          <div class="s">
             <div class="call kard-wrapper center">
               <div class="call kard flex-kard main_title">Выведено из портфеля</div>
               <div class="out-wrap">
@@ -172,12 +178,10 @@
               </div>
             </div>
           </div>
-
-
-
         </div>
       </div>
   </div>
-<script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
