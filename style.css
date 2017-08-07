@@ -858,6 +858,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 .calc-bg{
   height: 272px;
   background: url('img/bg-sub.png');
+  width: 1191px !important;
 }
 article{
   width: 180px;
