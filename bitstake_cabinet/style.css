@@ -111,7 +111,8 @@ p, h2, h1{
   box-shadow: 0 6px 5px -2px rgba(238,238,238,1);
 }
 .block-out{
-  min-height: 250px;
+  height: 176px;
+  padding: 38px 0 0px 38px;
 }
 .block-links{
   margin-top: 36px;
@@ -266,7 +267,7 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
   font-weight: 100;
 }
 .main_title{
-  padding: 23px;
+  padding: 23px 0;
   font-family: 'Proxima Nova Bold';
   font-size: 23px;
   width: 304px;
@@ -275,8 +276,19 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
   position: relative;
   z-index: 2;
 }
+.main_title p {
+  position: relative;
+  width: 100%;
+  text-indent: 23px;
+  line-height: 2em;
+  border-top: 2px solid #fdfdfd;
+  border-bottom: 2px solid #fdfdfd;
+}
+.call-caption{
+  width: 350px;
+}
 .main_title-callout{
-  width: 674px !important;
+  width: 720px !important;
 }
 .main_text p{
   font-family: 'Proxima Nova Light';
@@ -309,10 +321,10 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 .item a:hover,
 .item a:active{
   color: #660080;
-  border-bottom: 1px solid #660080;
+  border-bottom: 2px solid #660080;
 }
 .items{
-  min-height: 602px;
+  /*min-height: 602px;*/
   background: #fff;
 }
 .main_graph{
@@ -346,6 +358,7 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
   box-shadow: 0 0 6px 6px rgba(241,241,241,1);
 }
 .item p{
+  margin-left: 10px;
   font-family: 'Proxima Nova Light';
 }
 
