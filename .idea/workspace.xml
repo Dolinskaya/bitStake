@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8587c47f-e461-4297-a55c-c6738957a232" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitstake_cabinet/index.html" afterPath="$PROJECT_DIR$/bitstake_cabinet/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitstake_cabinet/style.css" afterPath="$PROJECT_DIR$/bitstake_cabinet/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -46,55 +47,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitstake_cabinet/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="422" column="2" lean-forward="false" selection-start-line="422" selection-start-column="2" selection-end-line="422" selection-end-column="2" />
+            <state relative-caret-position="186">
+              <caret line="243" column="1" lean-forward="true" selection-start-line="243" selection-start-column="1" selection-end-line="243" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bitstake_cabinet/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="159" column="51" lean-forward="false" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
+            <state relative-caret-position="460">
+              <caret line="68" column="59" lean-forward="false" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1502191018000" expanded="true" signature="4206:8516" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4231:6905" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4278:6888" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4411:4715" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4461:4568" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4598:4615" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4639:4694" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4754:6869" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4788:5258" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4825:5235" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4876:5210" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="4922:5126" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5292:5762" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5329:5739" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5380:5714" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5426:5631" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5796:6267" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5833:6244" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5884:6219" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="5930:6135" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="6303:6848" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="6344:6823" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="6401:6794" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="6455:6696" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="6964:8112" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="7014:8095" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="7147:7288" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="7339:7611" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="7662:7765" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="7816:7919" ph="..." />
-                <marker date="1502191018000" expanded="true" signature="7970:8076" ph="..." />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -107,8 +78,8 @@
       <find>мы про</find>
       <find>main_title</find>
       <find>main_text</find>
-      <find>main_title-callout</find>
       <find>item</find>
+      <find>main_title-callout</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -120,8 +91,8 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bitstake_cabinet/js/script.js" />
-        <option value="$PROJECT_DIR$/bitstake_cabinet/index.html" />
         <option value="$PROJECT_DIR$/bitstake_cabinet/style.css" />
+        <option value="$PROJECT_DIR$/bitstake_cabinet/index.html" />
       </list>
     </option>
   </component>
@@ -231,12 +202,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502099655729</updated>
-      <workItem from="1502099657824" duration="18191000" />
+      <workItem from="1502099657824" duration="18659000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18191000" />
+    <option name="totallyTimeSpent" value="18659000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1431" height="827" extended-state="0" />
@@ -311,53 +282,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitstake_cabinet/index.html">
+    <entry file="file://$PROJECT_DIR$/bitstake_cabinet/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="159" column="51" lean-forward="false" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1502191018000" expanded="true" signature="4206:8516" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4231:6905" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4278:6888" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4411:4715" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4461:4568" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4598:4615" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4639:4694" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4754:6869" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4788:5258" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4825:5235" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4876:5210" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="4922:5126" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5292:5762" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5329:5739" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5380:5714" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5426:5631" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5796:6267" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5833:6244" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5884:6219" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="5930:6135" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="6303:6848" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="6344:6823" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="6401:6794" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="6455:6696" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="6964:8112" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="7014:8095" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="7147:7288" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="7339:7611" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="7662:7765" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="7816:7919" ph="..." />
-            <marker date="1502191018000" expanded="true" signature="7970:8076" ph="..." />
-          </folding>
+        <state relative-caret-position="186">
+          <caret line="243" column="1" lean-forward="true" selection-start-line="243" selection-start-column="1" selection-end-line="243" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitstake_cabinet/style.css">
+    <entry file="file://$PROJECT_DIR$/bitstake_cabinet/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="422" column="2" lean-forward="false" selection-start-line="422" selection-start-column="2" selection-end-line="422" selection-end-column="2" />
-          <folding />
+        <state relative-caret-position="460">
+          <caret line="68" column="59" lean-forward="false" selection-start-line="68" selection-start-column="59" selection-end-line="68" selection-end-column="59" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
