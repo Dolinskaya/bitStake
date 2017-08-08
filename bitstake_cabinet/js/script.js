@@ -7,6 +7,8 @@ $(document).ready(function(){
             'box-shadow': '0px -6px 9px -5px rgba(241,241,241,1), 0px 9px 9px -5px rgba(241,241,241,1, -5px 0px 9px -2px rgba(241,241,241,1)',
             'border-left': '5px solid #660080'
         });
+        $(this).find('p').css('font-family', 'Proxima Nova Bold');
+        $(this).find('span').css('font-family', 'Proxima Nova Bold');
     })
 });
 // , function(){

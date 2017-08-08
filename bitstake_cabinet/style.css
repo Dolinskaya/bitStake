@@ -160,9 +160,9 @@ p, h2, h1{
 .kard{
   align-items: center;
   width: 350px;
-  -webkit-box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
-  -moz-box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
-  box-shadow: 0 3px 6px 0 rgba(241,241,241,1);
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(238,238,238,1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(238,238,238,1);
+  box-shadow: 0px 0px 5px 3px rgba(238,238,238,1);
   border-bottom: 1px solid #dedede;
 }
 .caption{
@@ -194,8 +194,7 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
   line-height: 2em;
   text-indent: 10px;
 }
-.block-link:hover,
-.block-link:active{
+.block-link:hover{
   background: #660080;
   color: #fff;
 }
@@ -316,10 +315,6 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 .main_graph{
   background: #fff;
 }
-.bold{
-  font-family: 'Proxima Nova Bold';
-  font-size: 17px;
-}
 .main_out{
   font-family: 'Proxima Nova Bold';
   font-size: 45px;
@@ -329,6 +324,9 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 }
 .out-wrap{
   background: #fff;
+}
+.bold{
+  font-family: 'Proxima Nova Bold' !important;
 }
 .main_graph span{
   font-family: 'Proxima Nova Light';
@@ -347,6 +345,7 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 .item p{
   font-family: 'Proxima Nova Light';
 }
+
 .user_name{
   font-family: 'Proxima Nova Light';
 }
@@ -355,19 +354,10 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 }
 .item--hover{
   width: 735px;
-  height: 37px;
+  align-items: center;
+  height: 52px;
   margin-left: -14px;
-  margin-top: 14px;
   position: relative;
-  /*-webkit-box-shadow: 0px -6px 9px -5px rgba(241,241,241,1),*/
-  /*0px 9px 9px -5px rgba(241,241,241,1),*/
-  /*-5px 0px 9px -2px rgba(241,241,241,1);*/
-  /*-moz-box-shadow: 0px -6px 9px -5px rgba(241,241,241,1),*/
-  /*0px 9px 9px -5px rgba(241,241,241,1),*/
-  /*-5px 0px 9px -2px rgba(241,241,241,1);*/
-  /*box-shadow: 0px -6px 9px -5px rgba(241,241,241,1),*/
-  /*0px 9px 9px -5px rgba(241,241,241,1),*/
-  /*-5px 0px 9px -2px rgba(241,241,241,1);*/
 }
 .callout{
   width: 720px;
@@ -378,6 +368,10 @@ box-shadow: 6px 0 5px -2px rgba(238,238,238,1);
 .relative{
   position: relative;
   bottom: 5px;
+}
+span.relative{
+  font-family: 'Proxima Nova Light';
+  color: #a6a6a6;
 }
 .dinamic-item{
   margin: auto;
