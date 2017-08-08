@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8587c47f-e461-4297-a55c-c6738957a232" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitstake_cabinet/index.html" afterPath="$PROJECT_DIR$/bitstake_cabinet/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bitstake_cabinet/style.css" afterPath="$PROJECT_DIR$/bitstake_cabinet/style.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -47,17 +46,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bitstake_cabinet/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="243" column="1" lean-forward="true" selection-start-line="243" selection-start-column="1" selection-end-line="243" selection-end-column="1" />
+            <state relative-caret-position="571">
+              <caret line="390" column="12" lean-forward="false" selection-start-line="390" selection-start-column="12" selection-end-line="390" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bitstake_cabinet/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="460">
@@ -78,8 +77,8 @@
       <find>мы про</find>
       <find>main_title</find>
       <find>main_text</find>
-      <find>item</find>
       <find>main_title-callout</find>
+      <find>item</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,8 +90,8 @@
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/bitstake_cabinet/js/script.js" />
-        <option value="$PROJECT_DIR$/bitstake_cabinet/style.css" />
         <option value="$PROJECT_DIR$/bitstake_cabinet/index.html" />
+        <option value="$PROJECT_DIR$/bitstake_cabinet/style.css" />
       </list>
     </option>
   </component>
@@ -202,12 +201,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502099655729</updated>
-      <workItem from="1502099657824" duration="18659000" />
+      <workItem from="1502099657824" duration="18786000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18659000" />
+    <option name="totallyTimeSpent" value="18786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1431" height="827" extended-state="0" />
@@ -282,14 +281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bitstake_cabinet/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="243" column="1" lean-forward="true" selection-start-line="243" selection-start-column="1" selection-end-line="243" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bitstake_cabinet/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
@@ -299,6 +290,14 @@
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bitstake_cabinet/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="390" column="12" lean-forward="false" selection-start-line="390" selection-start-column="12" selection-end-line="390" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
