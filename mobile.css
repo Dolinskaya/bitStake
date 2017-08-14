@@ -941,6 +941,8 @@ article{
 .slick-prev{
     bottom: -107px;
     left: 10px;
+    position: relative;
+    z-index: 20;
 }
 .command__slider{
     margin: auto;
@@ -1042,11 +1044,12 @@ input[type=range]:focus
     font-size: 17px;
 }
 .footer__desc{
-    font-size: 14px;
+    font-size: 13px;
     font-family: 'Proxima Nova Light';
     font-weight: 100;
     color: #a6a6a6;
     margin-top: 25px;
+    text-align: left;
 }
 .footer{
     padding-top: 31px;
@@ -1094,8 +1097,8 @@ input[type=range]:focus
 }
 .btn-open{
     position: relative;
-    bottom: -63px;
-    left: 20px;
+    bottom: -62px;
+    left: 18px;
     height: 15px;
 }
 .calc-wrap span{

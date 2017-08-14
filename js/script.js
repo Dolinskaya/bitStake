@@ -3,7 +3,6 @@ if (navigator.userAgent.indexOf('Android' || 'iphone' || 'blackberry' || 'webos'
 }
 if( screen.width <= 320 ) {
     location.assign('http://bitstake.ru/m');
-    // location.assign('http://m.bitstake.ru');
 };
 $(document).ready(function(){
   $('.command__slider').slick({
