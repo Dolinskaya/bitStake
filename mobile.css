@@ -612,7 +612,7 @@ input {outline:none;}
 }
 .connect__form-btn{
     border: 1px solid #fff;
-    padding: 10px 0 10px 33px;
+    padding: 15px 0 15px 33px;
     background: none;
     color: #fff;
     font-size: 14px;
@@ -621,7 +621,7 @@ input {outline:none;}
 }
 .btn-img{
     position: relative;
-    bottom: 132px;
+    bottom: 137px;
     left: 63px;
     height: 15px;
 }
