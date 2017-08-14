@@ -1,3 +1,10 @@
+if (navigator.userAgent.indexOf('Android' || 'iphone' || 'blackberry' || 'webos') != -1){
+    location.assign('http://m.bitstake.ru');
+}
+    if( screen.width <= 320 ) {
+        // location.assign('http://bitstake.ru');
+    // location.assign('http://m.bitstake.ru');
+};
 $(document).ready(function () {
 
     $('.burger').on('tap', function (e) {
