@@ -483,9 +483,9 @@ input {outline:none;}
 }
 .device-btn img{
     display: inline-block;
-    /*position: absolute;*/
-    /*left: 27px;*/
-    /*top: 20px;*/
+    position: relative;
+
+    top: 3px;
     height: 16px;
 }
 .device-btn-more{
