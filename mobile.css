@@ -694,7 +694,7 @@ input {outline:none;}
     font-family: 'Raleway-Bold';
     font-size: 17px;
     padding-top: 32px;
-
+    margin: 0;
 }
 .kard-wrapper{
     width: 280px;
