@@ -1,8 +1,8 @@
-if (navigator.userAgent.indexOf('Android' || 'iphone' || 'blackberry' || 'webos') != -1){
-    location.assign('http://bitstake.ru/m');
+if (navigator.userAgent.indexOf('Android' || 'Iphone' || 'Blackberry' || 'Webos') != -1){
+    location.assign('http://bitstake.ru/m/mobile.html');
 }
 if( screen.width <= 320 ) {
-    location.assign('http://bitstake.ru/m');
+    location.assign('http://bitstake.ru/m/mobile.html');
 };
 $(document).ready(function(){
   $('.command__slider').slick({
