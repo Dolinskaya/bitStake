@@ -740,6 +740,7 @@ input {outline:none;}
     font-size: 28px;
     font-weight: 100;
     padding-top: 27px;
+    padding-bottom: 15px;
 }
 .kard-block-tab,
 .kard-block__link{
