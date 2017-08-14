@@ -1,5 +1,5 @@
 if (navigator.userAgent.indexOf('Android' || 'iphone' || 'blackberry' || 'webos') != -1){
-    location.assign('http://m.bitstake.ru');
+    location.assign('http://bitstake.ru/m');
 }
 $(document).ready(function(){
   $('.command__slider').slick({
