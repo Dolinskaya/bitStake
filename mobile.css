@@ -1099,7 +1099,7 @@ input[type=range]:focus
 .btn-open{
     position: relative;
     bottom: -62px;
-    left: 18px;
+    left: 16px;
     height: 15px;
 }
 .calc-wrap span{
