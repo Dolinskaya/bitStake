@@ -1,12 +1,12 @@
 
 $(document).ready(function () {
-
+ var burger = $('.burger-drop');
     $('.burger').on('tap', function (e) {
         e.preventDefault();
-        if ($('.burger-drop').is(':hidden')){
-            $('.burger-drop').show();
-        }else if($('.burger-drop').is(':visible')){
-            $('.burger-drop').hide();
+        if (burger.is(':hidden')){
+            burger.show();
+        }else if(burger.is(':visible')){
+            burger.hide();
         }
     });
     var sliderLink = $('.slider a');
@@ -22,11 +22,11 @@ $(document).ready(function () {
             $('.slider a:first-child').appendTo('.slider');
             $('.slider').css('left', '');
         });
-    };
-    $('a').click(function (e) {
+    }
+    $('a').click(function(e) {
         e.preventDefault();
-    })
-    $('img.control_next').tap(function (e) {
+    });
+    $('img.control_next').tap(function(e) {
         e.preventDefault();
         moveRight();
     });
@@ -43,7 +43,6 @@ $(document).ready(function () {
     $('.command__slider').slick({
         autoplay: false,
         infinite: true,
-        // slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
         nextArrow: '<img src="img/arrow-next.png" alt="" class="btn-ar slick-next">',
@@ -51,7 +50,7 @@ $(document).ready(function () {
 
     });
     $('.nav-links a').on('tap', function(){
-        $('.burger-drop').hide();
+        burger.hide();
         var to = $(this).attr('href');
         var toOffset = $(to).offset.top;
         console.log('test done');
