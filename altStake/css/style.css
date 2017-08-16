@@ -446,7 +446,7 @@ span, p, h1, h2, h3, h4, h5{
     height: 36px;
 }
 .bottom__logo-text{
-    font-family: "Proxima Nova Light"
+    font-family: "Proxima Nova Light";
     font-size: 14px;
     position: relative;
     left: 43px;
