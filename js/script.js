@@ -15,4 +15,17 @@ $(document).ready(function(){
     prevArrow: '<img src="img/arrow-prev.png" alt="" class="btn-ar slick-prev">',
 
   });
+    $('.nav-links').on('nav__link', 'hover', function () {
+       console.log('test');
+       $(this).css('color', '#9e9e9e');
+    });
+    $('.nav-links a').on('click', function(){
+        $(".nav-links a").removeClass("nav__link--active");
+        $(this).toggleClass('nav__link--active');
+        var to = $(this).attr('href');
+        var toOffset = $(to).offset.top;
+        $('html, body').animate({
+            scrollTop: $(to).offset().top
+        }, 800);
+    });
 });

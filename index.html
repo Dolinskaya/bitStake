@@ -20,12 +20,12 @@
           <p class="nav_logo-text"><span>Bit</span>Stake</p>
         </div>
         <div class="nav-links call-4 center flex">
-          <a href="" class="nav__link">Начало</a>
-          <a href="" class="nav__link">Ваши шаги</a>
-          <a href="" class="nav__link">Инвестиции</a>
-          <a href="" class="nav__link">Почему мы</a>
-          <a href="" class="nav__link">Команда</a>
-          <a href="" class="nav__link">Калькулятор</a>
+          <a href="#start" class="nav__link">Начало</a>
+          <a href="#steps" class="nav__link">Ваши шаги</a>
+          <a href="#invest" class="nav__link">Инвестиции</a>
+          <a href="#why" class="nav__link">Почему мы</a>
+          <a href="#command" class="nav__link">Команда</a>
+          <a href="#calc" class="nav__link">Калькулятор</a>
         </div>
         <div class="nav__question flex">
           <img src="img/col.png" alt="">
@@ -35,7 +35,7 @@
         <div class="device flex ma">
           <!-- <img src="img/main.png" alt="" class="device-img call-2" width="540"> -->
           <div class="device-content call-4 fr">
-            <h1 class="device-title">Доверьте инвестиции в криптовалюту <b>профессионалам</b></h1>
+            <h1 class="device-title" id="start">Доверьте инвестиции в криптовалюту <b>профессионалам</b></h1>
             <p class="device-text">Мы торгуем –<br>
   Вы забираете <b>прибыль!</b></p>
             <div class="device-btn__wrap call-2 flex">
@@ -48,7 +48,7 @@
       <div class="main__content ma">
         <div class="main__content__wrap">
           <div class="main__content-header call-6 ma flex">
-            <h1 class="main__content__title call-4">Как работает система BitStake</h1>
+            <h1 class="main__content__title call-4" id="steps">Как работает система BitStake</h1>
             <div class="fr call-2 flex content-question">
               <p class="title-block__item--grey call">Остались вопросы?</p>
               <img src="img/mail.png" alt="" class="mail-icon">
@@ -102,7 +102,7 @@
           </div>
         </div>
         <div class="invest">
-          <h1 class="invest__title-main center">Куда мы инвестируем</h1>
+          <h1 class="invest__title-main center" id="invest">Куда мы инвестируем</h1>
           <section class="invest__flex-content call-5 flex ma">
             <div class="invest__content-item">
               <img class="invest__img" src="img/ico.png">
@@ -124,7 +124,8 @@
             </div>
           </section>
             </div>
-            <section class="kard call-6 ma">
+          <div id="why"></div>
+          <section class="kard call-6 ma">
               <h1 class="kard-main_title">Преимущества BitStake</h1>
               <div class="kard-block flex-content">
                 <img class="kard-block__img call-2" src="img/think.png">
@@ -216,7 +217,7 @@
                 <p class="info__text call-3">Мы же, благодаря нашим экспертам, формируем для Вас эффективный портфель криптовалют, который растет в цене, а также Вы всегда можете вывести эти валюты на свои -кошельки!  Bitstake это то же самое, если бы Вы зарегистрировались на бирже, а рядом с Вами сидел бы эксперт, который говорил что, когда и как покупать для работы в плюс.  </p>
               </div>
             </div>
-            <div class="command">
+            <div class="command" id="command">
               <h1 class="command__title center">Команда BitStake</h1>
                 <div class="row command__slider  call-6">
                   <div class="slide img img-1 center">
@@ -290,7 +291,7 @@
                 </form>
               </div>
             </div>
-            <div class="calc-main__header ma call-6 flex">
+            <div class="calc-main__header ma call-6 flex" id="calc">
               <h1 class="calc__title call-4">Калькулятор вашего дохода</h1>
                 <p class="calc__desc call-2 fr">По результатам наших инвесторов за 2016 год</p>
             </div>
@@ -336,6 +337,7 @@
             </div>
       </div>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.tap.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
