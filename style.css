@@ -635,14 +635,14 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   color: #fff;
   font-size: 17px;
 }
-.pink .connect__form-btn:hover{
+form.pink .connect__form-btn:hover{
   background: #fff;
-  color: #c98fd8;
+  color: #660080;
   font-family: "Proxima Nova Light";
 }
-.blue connect__form-btn:hover{
+form.blue .connect__form-btn:hover{
   cursor: pointer;
-  color: #b4e1ec;
+  color: #08a1c7;
   font-family: "Proxima Nova Light";
   background: #fff;
 }

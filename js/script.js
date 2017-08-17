@@ -79,8 +79,13 @@ $(document).ready(function(){
     $('.validate').click(function (e) {
         e.preventDefault();
     });
-    $('.pink .connect__form-btn').hover(function () {
+    $('form.pink .connect__form-btn').hover(function () {
         $(this).next().attr('src', 'img/reg--hover.png');
+    }, function () {
+        $(this).next().attr('src', 'img/reg.png');
+    });
+    $('form.blue .connect__form-btn').hover(function () {
+        $(this).next().attr('src', 'img/reg-hover-blue.png');
     }, function () {
         $(this).next().attr('src', 'img/reg.png');
     });
