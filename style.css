@@ -334,6 +334,9 @@ border-bottom: 1px solid #dedede;
   border-bottom: 2px solid transparent;
 
 }
+.nav__link:hover{
+  color: #9e9e9e;
+}
 .nav__link--active{
   border-bottom: 2px solid #660080;
 }
@@ -353,6 +356,11 @@ border-bottom: 1px solid #dedede;
   margin-top: -59px;
   margin-right: 28px;
   font-family: 'Proxima Nova Light';
+}
+.nav__question:hover,
+.nav__question:active{
+  color: #9e9e9e;
+  cursor: pointer;
 }
 .invest__img{
   width: 32px;
@@ -440,6 +448,9 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   font-family: 'Proxima Nova Light';
   font-size: 17px;
 }
+.more-link:hover{
+  color: #fff;
+}
 .more-btn-img{
   position: relative;
   top: 4px;
@@ -460,6 +471,13 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   padding-left: 20px;
   font-family: 'Proxima Nova Light';
 }
+.device-btn:hover{
+  cursor: pointer;
+  background: #000;
+}
+.device-btn a:hover{
+  color: #fff;
+}
 .device-btn img{
   display: inline-block;
   position: absolute;
@@ -471,10 +489,16 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   display: inline-table;
   padding: 19px 32px 10px 20px;
 }
+.device-btn-more:hover{
+  cursor: pointer;
+}
 .device-btn-more a{
-  color: #660080;;
+  color: #660080;
   padding-left: 20px;
   font-family: 'Proxima Nova Light';
+}
+.device-btn-more a:hover{
+  color: #9e9e9e;
 }
 .left-block__title{
   font-family: 'Raleway-Bold';
@@ -556,12 +580,25 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .connect__form{
   margin-top: 40px;
+  /*position: relative;*/
 }
 .pink input[type="email"],
 .pink input[type="password"]{
   color: #c98fd8;
   font-size: 17px;
   font-weight: 100;
+}
+.field-for-validate{
+  position: relative;
+}
+.validate{
+  position: absolute;
+  color: #c98fd8;
+  background: #000;
+  right: 0px;
+  top: 0;
+  padding: 10px 20px 14px 20px;
+  font-family: "Proxima Nova Light";
 }
 .connect__form-email,
 .connect__form-psw
@@ -592,6 +629,11 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   background: none;
   color: #fff;
   font-size: 17px;
+}
+.pink .connect__form-btn:hover{
+  background: #fff;
+  color: #c98fd8;
+  font-family: "Proxima Nova Light";
 }
 .btn-img{
   position: relative;
@@ -678,6 +720,10 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   background: #660080;
   text-align: center;
 }
+.more-btn:hover{
+  cursor: pointer;
+  background: #000;
+}
 .kard-main_title{
   font-family: 'Raleway-Thin';
   font-size: 56px;
@@ -717,6 +763,10 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   margin-left: 4px;
   color: #660080;
   font-family: 'Proxima Nova Light';
+}
+.title-block__item:hover{
+  color: #9e9e9e;
+  cursor: pointer;
 }
 .item__text{
   font-family: 'Proxima Nova Light';
