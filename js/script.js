@@ -4,13 +4,30 @@ if (navigator.userAgent.indexOf('Android' || 'Iphone' || 'Blackberry' || 'Webos'
 if( screen.width <= 320 ) {
     location.assign('http://bitstake.ru/m/mobile.html');
 };
-function isValid() {
-    var errorBlock = '<a href="" class="validate">Поле не заполнено</a>';
-    $('.field-for-validate').each(function () {
-        if($(this).find('input').val() === ''){
-            $(this).append(errorBlock);
-        }
-    });
+function isValid(form) {
+    var parent = form.parent();
+    var color = parent.data();
+    color = color.color;
+    var errorBlock = '<a href="" class="validate '+color+'">Поле не заполнено</a>';
+    if(parent.hasClass('pink')){
+        $(parent).find($('.field-for-validate')).each(function () {
+            var self = $(this);
+                if(self.find('input').val() === ''){
+                    self.append(errorBlock);
+                }else{
+                    self.find('.validate').remove();
+                }
+            });
+    } else{
+        $(parent).find($('.field-for-validate')).each(function () {
+            var self = $(this);
+            if(self.find('input').val() === ''){
+                self.append(errorBlock);
+            }else{
+                self.find('.validate').remove();
+            }
+        });
+    }
 };
 $(document).ready(function(){
   $('.command__slider').slick({
@@ -19,7 +36,7 @@ $(document).ready(function(){
     centerMode: true,
     variableWidth: true,
     nextArrow: '<img src="img/arrow-next.png" alt="" class="btn-ar slick-next">',
-    prevArrow: '<img src="img/arrow-prev.png" alt="" class="btn-ar slick-prev">',
+    prevArrow: '<img src="img/arrow-prev.png" alt="" class="btn-ar slick-prev">'
 
   });
     $('.nav-links').on('nav__link', 'hover', function () {
@@ -51,11 +68,25 @@ $(document).ready(function(){
     }, function () {
         $(this).prev().attr('src', 'img/mail.png');
     });
-    $('.connect__form-btn').on('click', function (e) {
+    $('.pink .connect__form-btn').on('click', function (e) {
         e.preventDefault();
-        isValid();
+        isValid($(this));
+    });
+    $('.blue .connect__form-btn').on('click', function (e) {
+        e.preventDefault();
+        isValid($(this));
     });
     $('.validate').click(function (e) {
         e.preventDefault();
-    })
+    });
+    $('.pink .connect__form-btn').hover(function () {
+        $(this).next().attr('src', 'img/reg--hover.png');
+    }, function () {
+        $(this).next().attr('src', 'img/reg.png');
+    });
+    $('.invest-ing-img').hover(function () {
+        $(this).attr('src','img/info--hover.png');
+    }, function () {
+        $(this).attr('src','img/info.png');
+    });
 });

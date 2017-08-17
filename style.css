@@ -593,12 +593,17 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .validate{
   position: absolute;
-  color: #c98fd8;
   background: #000;
   right: 0px;
   top: 0;
   padding: 10px 20px 14px 20px;
   font-family: "Proxima Nova Light";
+}
+.pink{
+  color: #c98fd8;
+}
+.blue{
+  color: #b4e1ec;
 }
 .connect__form-email,
 .connect__form-psw
@@ -635,6 +640,12 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   color: #c98fd8;
   font-family: "Proxima Nova Light";
 }
+.blue connect__form-btn:hover{
+  cursor: pointer;
+  color: #b4e1ec;
+  font-family: "Proxima Nova Light";
+  background: #fff;
+}
 .btn-img{
   position: relative;
   right: 300px;
@@ -651,6 +662,9 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 .invest-ing-img{
   padding: 20px 0 83px 0;
   width: 16px;
+}
+.invest-ing-img:hover{
+  cursor: pointer;
 }
 .invest__title-main{
   font-family: 'Raleway-Thin';
@@ -903,7 +917,10 @@ article{
 .btn-ar{
   position: relative;
 }
-
+.slick-next,
+.slick-prev{
+  cursor: pointer;
+}
 .slick-next{
   left: 1228px;
   bottom: 193px;
@@ -971,10 +988,17 @@ input[type="range"]::-webkit-slider-thumb
   -moz-box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
   box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
 }
-
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:focus{
+  background-color: #9e9e9e;
+}
 input[type=range]:focus
 {
-    outline:none;
+  outline:none;
+  cursor: pointer;
+}
+input[type=range]:hover{
+  cursor: pointer;
 }
 .footer__title{
     font-family: 'Proxima Nova Light';
@@ -1006,16 +1030,23 @@ input[type=range]:focus
 }
 .open{
   border: 1px solid #fff;
-padding: 10px 0 10px 17px;
-background: #660080;
-color: #fff;
-margin-top: 54px;
+  padding: 10px 0 10px 17px;
+  background: #660080;
+  color: #fff;
+  margin-top: 54px;
+  z-index: 1;
+  position: relative;
+}
+.open:hover{
+  background: #000;
+  cursor: pointer;
 }
 .btn-open{
   position: relative;
   right: 145px;
   bottom: -4px;
   height: 15px;
+  z-index: 1;
   }
   .calc-wrap span{
     color: #08a1c7;
@@ -1040,9 +1071,3 @@ input[type="submit"]{
   font-family: 'Proxima Nova Light';
   font-size: 14px;
 }
-/*@media (max-width: 320px) {*/
-  /*.nav-links,*/
-  /*.nav__question{*/
-    /*display: none;*/
-  /*}*/
-/*}*/
