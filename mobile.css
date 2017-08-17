@@ -713,7 +713,7 @@ input {outline:none;}
     left: 273px;
     top: -49px;
 }
-.slider{
+.slider-text{
     overflow: hidden;
 }
 .kard-block__text{
@@ -1001,29 +1001,22 @@ article{
     width: 262px;
     padding: 30px;
 }
-input[type=range]
-{
-    -webkit-appearance: none;
-    background-color: #777;
-    height: 2px;
-    width: 222px;
-    margin-top: 37px;
+.field-for-validate{
+    position: relative;
 }
-input[type="range"]::-webkit-slider-thumb
-{
-    -webkit-appearance: none;
-    background-color: #08a1c7;
-    width: 14px;
-    height: 14px;
-    transform: rotate(45deg);
-    -webkit-box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
-    -moz-box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
-    box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
+.validate{
+    position: absolute;
+    background: #000;
+    right: 0px;
+    top: 0;
+    padding: 7px 20px 14px 20px;
+    font-family: "Proxima Nova Light";
 }
-
-input[type=range]:focus
-{
-    outline:none;
+.pink .validate{
+    color: #c98fd8;
+}
+.blue .validate{
+    color: #b4e1ec;
 }
 .footer__title{
     font-family: 'Proxima Nova Light';
@@ -1109,4 +1102,56 @@ input[type="submit"]{
     font-family: 'Proxima Nova Light';
     font-size: 14px;
     margin-top: 20px;
+}
+/* Контейнер слайдера */
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    -webkit-appearance: none;
+    background-color: #08a1c7;
+    width: 14px;
+    height: 14px;
+    outline: none;
+    transform: rotate(45deg);
+    -webkit-box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
+    -moz-box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
+    box-shadow: 3px 3px 6px 0 rgba(228,228,228,1);
+}
+.ui-slider-range-min{
+    background-color: #08a1c7;
+    height: 2px;
+}
+/*.ui-slider .ui-slider-range {*/
+/*position: absolute;*/
+/*z-index: 1;*/
+/*font-size: .7em;*/
+/*display: block;*/
+/*border: 0;*/
+/*overflow: hidden;*/
+/*}*/
+/*!* горизонтальный слайдер (сама полоса по которой бегает ползунок) *!*/
+/*.ui-slider-horizontal {*/
+/*height: 3px; !* задаем высоту согласно дизайна *!*/
+/*}*/
+/* позиционируем ползунки */
+.ui-slider-horizontal .ui-slider-handle {
+    top: -6px;
+    margin-left: -6px;
+}
+
+/* оформление полосы по которой ходит ползунок */
+.ui-widget-content {
+    -webkit-appearance: none;
+    background-color: #777;
+    height: 2px;
+    width: 222px;
+    margin-top: 37px;
+}
+.result-sum,
+.result-date{
+    font-family: 'Proxima Nova Bold';
 }

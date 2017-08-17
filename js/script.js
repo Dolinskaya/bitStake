@@ -6,19 +6,7 @@ if( screen.width <= 320 ) {
 };
 function isValid(form) {
     var parent = form.parent();
-    var color = parent.data();
-    color = color.color;
-    var errorBlock = '<a href="" class="validate '+color+'">Поле не заполнено</a>';
-    if(parent.hasClass('pink')){
-        $(parent).find($('.field-for-validate')).each(function () {
-            var self = $(this);
-                if(self.find('input').val() === ''){
-                    self.append(errorBlock);
-                }else{
-                    self.find('.validate').remove();
-                }
-            });
-    } else{
+    var errorBlock = '<a href="" class="validate">Поле не заполнено</a>';
         $(parent).find($('.field-for-validate')).each(function () {
             var self = $(this);
             if(self.find('input').val() === ''){
@@ -27,7 +15,6 @@ function isValid(form) {
                 self.find('.validate').remove();
             }
         });
-    }
 };
 $(document).ready(function(){
   $('.command__slider').slick({
@@ -94,4 +81,30 @@ $(document).ready(function(){
     }, function () {
         $(this).attr('src','img/info.png');
     });
+    $(".slider-sum").slider({
+        range: "min",
+        min: 50,
+        max: 10000,
+        value: 4000,
+        step: 50,
+        slide: function( event, ui ) {
+            $(".result-sum").html( "$" + ui.value );
+        }
+    });
+    $(".result-sum").html( "$" + $( ".slider-sum" ).slider( "value" ));
+    $('.slider-sum').slider("value");
+
+    $(".slider").slider({
+        range: "min",
+        min: 30,
+        max: 365,
+        value: 120,
+        step: 5,
+        slide: function( event, ui ) {
+            $(".result-date").html( ui.value +" дней");
+        }
+    });
+    $(".result-date").html( $( ".slider").slider( "value" )+ ' дней');
+    $('.slider').slider('value');
+
 });
