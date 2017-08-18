@@ -5,7 +5,7 @@ if( screen.width <= 320 ) {
     location.assign('http://bitstake.ru/m/mobile.html');
 };
 function isValid(form) {
-    var parent = form.parent();
+    var parent = form.parent().parent();
     var errorBlock = '<a href="" class="validate">Поле не заполнено</a>';
         $(parent).find($('.field-for-validate')).each(function () {
             var self = $(this);
@@ -55,11 +55,11 @@ $(document).ready(function(){
     }, function () {
         $(this).prev().attr('src', 'img/mail.png');
     });
-    $('.pink .connect__form-btn').on('click', function (e) {
+    $('.pink').on('click', '.connect__form-btn', function (e) {
         e.preventDefault();
         isValid($(this));
     });
-    $('.blue .connect__form-btn').on('click', function (e) {
+    $('.blue').on('click', '.connect__form-btn', function (e) {
         e.preventDefault();
         isValid($(this));
     });
@@ -107,4 +107,36 @@ $(document).ready(function(){
     $(".result-date").html( $( ".slider").slider( "value" )+ ' дней');
     $('.slider').slider('value');
 
+
+    var sliderLink = $('.slider-text a');
+    var slideCount = sliderLink.length;
+    var slideWidth = sliderLink.width();
+    var slideHeight = sliderLink.height();
+    var sliderUlWidth = slideCount * slideWidth;
+    $('.slider-text a:last-child').prependTo('.slider-text');
+    function moveRight() {
+        $('.slider-text').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('.slider-text a:first-child').appendTo('.slider-text');
+            $('.slider-text').css('left', '');
+        });
+    };
+    $('a').click(function(e) {
+        e.preventDefault();
+    });
+    $('img.control_next').tap(function(e) {
+        e.preventDefault();
+        moveRight();
+    });
+    $('.tap-container').on('tap', '.kard-block__link', function(e) {
+        e.preventDefault();
+        $(".tap-container .kard-block__link").removeClass("active");
+        $(this).toggleClass('active');
+    });
+    $('.kard-name-links').on('tap', '.kard-block-tab', function(e) {
+        e.preventDefault();
+        $(".kard-name-links .kard-block-tab").removeClass("active-links");
+        $(this).toggleClass('active-links');
+    });
 });
