@@ -484,6 +484,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   height: 16px;
 }
 .device-btn-more{
+  width: 173px;
   display: inline-table;
   padding: 19px 32px 10px 20px;
 }
@@ -506,6 +507,32 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   position: absolute;
   left: 290px;
   top: 20px;
+  height: 16px;
+}
+.device-btn a{
+  padding-left: 30px;
+}
+.device-btn img{
+  left: 38px;
+}
+.device-btn__wrap span{
+  margin-left: 0;
+}
+.device-btn__wrap{
+  flex-wrap: wrap;
+}
+.device-btn-more{
+  padding-left: 19px;
+  position: relative;
+}
+.device-btn-more a{
+  padding-left: 25px;
+}
+.device-btn-more img {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: 19px;
   height: 16px;
 }
 .mail-icon{
@@ -1005,6 +1032,10 @@ input[type=range]:hover{
   font-size: 14px;
   font-family: 'Proxima Nova Light';
 }
+.mail-block{
+  display: flex;
+  align-items: center;
+}
 .open{
   border: 1px solid #fff;
   padding: 10px 0 10px 17px;
@@ -1070,24 +1101,11 @@ input[type="submit"]{
   background-color: #08a1c7;
   height: 2px;
 }
-/*.ui-slider .ui-slider-range {*/
-  /*position: absolute;*/
-  /*z-index: 1;*/
-  /*font-size: .7em;*/
-  /*display: block;*/
-  /*border: 0;*/
-  /*overflow: hidden;*/
-/*}*/
-/*!* горизонтальный слайдер (сама полоса по которой бегает ползунок) *!*/
-/*.ui-slider-horizontal {*/
-  /*height: 3px; !* задаем высоту согласно дизайна *!*/
-/*}*/
 /* позиционируем ползунки */
 .ui-slider-horizontal .ui-slider-handle {
   top: -6px;
   margin-left: -6px;
 }
-
 /* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
   -webkit-appearance: none;
@@ -1110,13 +1128,84 @@ input[type="submit"]{
   width: 448px;
   }
   .call-4{
-  width: 544px;
+  width: 604px;
   }
   .call-5{
   width: 680px;
   }
   .call-6{
   width: 916px;
+  }
+  .device {
+    min-height: 570px;
+    position: relative;
+    left: 0;
+    top: 45px;
+    background: url(img/bg-mobile-1024.png) no-repeat;
+    padding-bottom: 38px;
+    background-size: cover;
+  }
+  .device-content {
+    position: relative;
+    right: -46%;
+    top: 12px;
+    transform: scale(0.9);
+  }
+  .device-title{
+    width: 319px;
+    font-size: 44px;
+  }
+  .device-text{
+    font-size: 23px;
+  }
+  .main__content__title {
+    margin: 60px 0 80px 0;
+  }
+  .content-question{
+    margin-top: 0;
+  }
+  .left-block__title {
+    font-size: 17px;
+  }
+  .main__content-right {
+    margin-right: 0;
+    width: 448px;
+  }
+  .left-block__text {
+    font-size: 15px;
+  }
+  .flex-block__bottom{
+    margin-bottom: 57px;
+  }
+  .flex-block__bottom-title{
+    font-size: 17px;
+  }
+  .flex-block__bottom-subtitle {
+    font-size: 15px;
+  }
+  .more-btn {
+    top: -304px;
+  }
+  .title-block__item--grey{
+    font-size: 15px;
+  }
+  .flex-block__bottom-text{
+    margin-top: 37px;
+  }
+  .invest{
+    padding-top: 60px;
+  }
+  .invest__flex-content{
+    margin-top: 50px;
+  }
+  .invest-ing-img {
+    padding: 20px 0 34px 0;
+  }
+  .invest__title{
+    font-size: 44px;
+  }
+  .invest__title{
+    font-size: 17px;
   }
   .slide{
     width: 150px !important;
@@ -1153,6 +1242,7 @@ input[type="submit"]{
   }
   .kard-block__title{
     font-size: 17px;
+    width: 549px;
   }
   .second{
     padding: 0 30px;
@@ -1162,11 +1252,21 @@ input[type="submit"]{
     padding: 0 30px;
   }
   .img-second{
-    height: 100px;
+    margin-top: 0;
   }
   .kard-block__text{
     font-size: 15px;
     margin-top: 37px;
+  }
+  .kard{
+    padding-top: 20px;
+  }
+  .kard-main_title{
+    font-size: 44px;
+  }
+  .second-kard{
+    width: 250px;
+    margin-right: 51px;
   }
   .items{
     padding-top: 20px;
@@ -1220,6 +1320,12 @@ input[type="submit"]{
   }
   .connect__form {
     margin-top: 38px;
+  }
+  .connect-wrap{
+    background-image: url('img/pink-bg-1024.png');
+    padding-bottom: 120px;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .connect-wrap-blue{
     background: url("img/blue-bg-1024.png");
