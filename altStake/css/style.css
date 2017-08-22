@@ -480,9 +480,10 @@ span, p, h1, h2, h3, h4, h5{
 .none{
     display: none;
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     html {
         -webkit-text-size-adjust: none;
+        overflow-x: hidden;
     }
     body{
         /*overflow-x: hidden;*/
