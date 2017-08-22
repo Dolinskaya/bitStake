@@ -480,6 +480,11 @@ span, p, h1, h2, h3, h4, h5{
 .none{
     display: none;
 }
+@media screen and (min-width: 1024px){
+    .subtop-left{
+        flex-wrap: wrap;
+    }
+}
 @media screen and (min-width: 560px) and (max-width: 1024px){
     .call{
         width: 324px;
@@ -581,9 +586,6 @@ span, p, h1, h2, h3, h4, h5{
         position: relative;
         margin: 0;
         z-index: 2;
-    }
-    .subtop-right{
-        margin: auto;
     }
     .subtop-item{
         width: 140px;
