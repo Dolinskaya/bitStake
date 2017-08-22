@@ -415,7 +415,7 @@ span, p, h1, h2, h3, h4, h5{
     width: 100%;
     max-width: 820px;
 }
-.bottom{
+.bottom-wrapper{
     background: #fff;
     border-top: 1px solid #dddddd;
     -webkit-box-shadow: inset 0px 4px 5px 0px rgba(241,241,241,1);
@@ -487,9 +487,18 @@ span, p, h1, h2, h3, h4, h5{
     body{
         /*overflow-x: hidden;*/
     }
+    .bg-wrap{
+        overflow: hidden;
+        margin-top: 85px;
+    }
     .banner{
         overflow: hidden;
-        padding: 10px 0
+        padding: 10px 0;
+    }
+    .banner-last{
+        -webkit-box-shadow: inset 0px -4px 5px 0px rgba(234,234,234,1);
+        -moz-box-shadow: inset 0px -4px 5px 0px rgba(234,234,234,1);
+        box-shadow: inset 0px -4px 5px 0px rgba(234,234,234,1);
     }
     .banner img {
         width: 264%;
@@ -526,7 +535,7 @@ span, p, h1, h2, h3, h4, h5{
         position: absolute;
         background: #08a1c7;
         height: 5px;
-        z-index: 2;
+        z-index: 20;
     }
     .burger-drop{
         display: none;
@@ -534,7 +543,8 @@ span, p, h1, h2, h3, h4, h5{
         width: 300px;
         background: #fff;
         left: -8px;
-        z-index: 1;
+        top: 22px;
+        z-index: 8;
         -webkit-box-shadow: 0px 0px 5px 5px rgba(241,241,241,1);
         -moz-box-shadow: 0px 0px 5px 5px rgba(241,241,241,1);
         box-shadow: 0px 0px 5px 5px rgba(241,241,241,1);
@@ -555,6 +565,35 @@ span, p, h1, h2, h3, h4, h5{
         height: 5px;
         position: absolute;
         bottom: 8px;
+    }
+    .nav__mobile{
+        background: #fff;
+    }
+    .nav__link{
+        color: #08a1c7;
+        font-size: 17px;
+        margin-left: 32px;
+        margin-right: 69px;
+        font-family: 'Proxima Nova Condensed';
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+
+    }
+    .nav__link:hover{
+        border-bottom: 2px solid #08a1c7;
+    }
+    .active-drop{
+        border-bottom: 2px solid #08a1c7;
+    }
+    .nav-links{
+        padding: 38px 115px 33px 0;
+        flex-direction: column;
+    }
+    .nav_logo{
+        margin-top: 29px;
+        margin-left: 29px;
+        height: 36px;
     }
     .subtop-left{
         display: none;
@@ -602,10 +641,11 @@ span, p, h1, h2, h3, h4, h5{
     }
     .left-content{
         margin: 20px auto auto auto;
+        /*overflow: hidden;*/
     }
     .content{
         width: 300px;
-        margin-top: 85px;
+        padding-bottom: 5px;
     }
     .top-right{
         position: absolute;
@@ -656,6 +696,7 @@ span, p, h1, h2, h3, h4, h5{
     .text p{
         width: 280px;
         margin: 27px auto auto auto;
+        font-size: 14px;
     }
     .right-content--img {
         display: inline-block;
@@ -664,7 +705,7 @@ span, p, h1, h2, h3, h4, h5{
     }
     .quotes{
         padding: 16px;
-        margin-left: -10px;
+        margin-left: -17px;
     }
     .tags{
         margin-top: 27px;
@@ -674,11 +715,92 @@ span, p, h1, h2, h3, h4, h5{
     }
     .other-title{
         font-size: 17px;
+        margin-bottom: 5px;
     }
     .other-link{
         display: inline-block;
     }
     .other-link a{
         font-size: 14px;
+        display: inline-block;
+        margin-left: 25px;
+        margin-top: -16px;
+    }
+    .plug{
+        margin-top: 30px;
+        width: 264%;
+        max-width: none;
+    }
+    .plug-wrap{
+        margin-left: -10px;
+    }
+    .quotes p{
+        font-size: 14px;
+    }
+    #disqus_thread{
+        min-height: auto;
+        padding: 10px;
+        width: 280px;
+        margin-left: -10px;
+        margin-top: 5px;
+    }
+    .ads{
+        width: 290px;
+        flex-wrap: wrap;
+    }
+    .ad{
+        width: auto;
+        margin-left: -10px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    .ad_title{
+        font-size: 17px;
+    }
+    .ad_info-block span{
+        font-size: 14px;
+    }
+    .ad_info-block{
+        margin-top: 34px;
+    }
+    .bottom__links{
+        display: none;
+    }
+    .bottom{
+        width: 280px;
+        margin: auto;
+        flex-wrap: wrap;
+        min-height: 170px;
+        text-align: center;
+        position: relative;
+    }
+    .bottom-images{
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        left: 0;
+    }
+    .bottom__logo{
+        position: absolute;
+        bottom: 0;
+    }
+    .bottom-left{
+        width: auto;
+    }
+    .bottom__logo-img{
+        margin-left: 90px;
+        position: relative;
+        top: -10px;
+    }
+    .bottom__logo-text {
+        position: relative;
+        left: 42px;
+        top: -84px;
+        margin-left: 10px;
+    }
+    .bottom-wrapper{
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
 }
