@@ -412,7 +412,7 @@ span, p, h1, h2, h3, h4, h5{
     background: url('../img/plug-bg.png') repeat;
 }
 .banner img{
-    width: 100%;
+    width: 90%;
     max-width: 820px;
 }
 .bottom-wrapper{
