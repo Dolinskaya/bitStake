@@ -84,7 +84,7 @@ span, p, h1, h2, h3, h4, h5{
     width: 1060px;
     margin: auto;
 }
-.top{
+.top-wrapper{
     background: #fff;
     border-top: 1px solid #dddddd;
     -webkit-box-shadow: inset 0px 4px 5px 0px rgba(241,241,241,1);
@@ -477,15 +477,19 @@ span, p, h1, h2, h3, h4, h5{
 #disqus_thread p{
     font-family: "Raleway-Bold" !important;
 }
+.none{
+    display: none;
+}
 @media screen and (min-width: 320px) and (max-width: 480px) {
     html {
         -webkit-text-size-adjust: none;
     }
     body{
-        overflow-x: hidden;
+        /*overflow-x: hidden;*/
     }
-    p, span{
-        font-size: 14px !important;
+    .banner{
+        overflow: hidden;
+        padding: 10px 0
     }
     .banner img {
         width: 264%;
@@ -509,14 +513,17 @@ span, p, h1, h2, h3, h4, h5{
     .top__links{
         display: none;
     }
-    .top-right{
+    .top-right p{
         display: none;
+    }
+    .top-images{
+        display: flex;
     }
     .burger{
         width: 27px;
-        top: -2px;
-        right: 20px;
-        position: relative;
+        top: 42px;
+        right: 0;
+        position: absolute;
         background: #08a1c7;
         height: 5px;
         z-index: 2;
@@ -555,10 +562,123 @@ span, p, h1, h2, h3, h4, h5{
     .right-content{
         display: none;
     }
+    .subtop{
+        position: relative;
+        margin: 0;
+        z-index: 2;
+    }
     .subtop-right{
-        width: 280px;
+        margin: auto;
     }
     .subtop-item{
         width: 140px;
+        align-items: center;
+        margin-left: 7px;
+    }
+    .subtop-item:last-child{
+        width: 170px;
+    }
+    .subtop-item p,
+    .subtop-item span{
+        font-size: 14px;
+    }
+    .subtop-item p {
+        margin-left: 5px;
+    }
+    .subtop:after{
+        content: '';
+        display: flex;
+        align-items: center;
+        position: absolute;
+        width: 100%;
+        height: 84px;
+        background: #fff;
+        border-bottom: 1px solid #dedede;
+        -webkit-box-shadow: inset 0px 4px 5px 0px rgba(241,241,241,1);
+        -moz-box-shadow: inset 0px 4px 5px 0px rgba(241,241,241,1);
+        box-shadow: inset 0px 4px 5px 0px rgba(241,241,241,1);
+        z-index: 1;
+        top: 51px;
+    }
+    .left-content{
+        margin: 20px auto auto auto;
+    }
+    .content{
+        width: 300px;
+        margin-top: 85px;
+    }
+    .top-right{
+        position: absolute;
+        top: 172px;
+        left: -54px;
+        justify-content: center;
+        margin: auto;
+        z-index: 3;
+    }
+    .top-left{
+        width: inherit;
+        margin-left: 0;
+    }
+    .top{
+        position: relative;
+        width: 280px;
+        margin: auto;
+    }
+    .info-wrap{
+        width: 300px;
+        margin: auto;
+    }
+    .title{
+        font-size: 28px;
+    }
+    .share{
+        width: 300px;
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+    .share-at{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .share a{
+        text-align: center;
+    }
+    .share-fb{
+        width: 25%;
+    }
+    .share-vk{
+        width: 22%;
+    }
+    .text{
+        width: 300px;
+        margin-top: 30px;
+    }
+    .text p{
+        width: 280px;
+        margin: 27px auto auto auto;
+    }
+    .right-content--img {
+        display: inline-block;
+        height: auto;
+        margin-left: -10px;
+    }
+    .quotes{
+        padding: 16px;
+        margin-left: -10px;
+    }
+    .tags{
+        margin-top: 27px;
+    }
+    .other{
+        margin-top: 30px;
+    }
+    .other-title{
+        font-size: 17px;
+    }
+    .other-link{
+        display: inline-block;
+    }
+    .other-link a{
+        font-size: 14px;
     }
 }
