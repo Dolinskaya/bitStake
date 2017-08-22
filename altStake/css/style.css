@@ -480,13 +480,178 @@ span, p, h1, h2, h3, h4, h5{
 .none{
     display: none;
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 560px) and (max-width: 1024px){
+    .call{
+        width: 324px;
+    }
+    .call-2,
+    .call-3,
+    .call-4,
+    .call-5,
+    .call-6{
+        width: 668px;
+    }
+    .top__links{
+        display: none;
+    }
+    .top-right p{
+        display: none;
+    }
+    .top-images{
+        display: flex;
+    }
+    .burger{
+        width: 27px;
+        top: 43px;
+        right: 0;
+        position: absolute;
+        background: #08a1c7;
+        height: 5px;
+        z-index: 20;
+    }
+    .burger-drop{
+        display: none;
+        position: absolute;
+        width: 300px;
+        background: #fff;
+        left: -8px;
+        top: 22px;
+        z-index: 8;
+        -webkit-box-shadow: 0px 0px 5px 5px rgba(241,241,241,1);
+        -moz-box-shadow: 0px 0px 5px 5px rgba(241,241,241,1);
+        box-shadow: 0px 0px 5px 5px rgba(241,241,241,1);
+    }
+
+    .burger:before{
+        content: '';
+        width: 27px;
+        background: #08a1c7;
+        height: 5px;
+        position: absolute;
+        top: 8px;
+    }
+    .burger:after{
+        content: '';
+        width: 27px;
+        background: #08a1c7;
+        height: 5px;
+        position: absolute;
+        bottom: 8px;
+    }
+    .nav__mobile{
+        background: #fff;
+    }
+    .nav__link{
+        color: #08a1c7;
+        font-size: 17px;
+        margin-left: 32px;
+        margin-right: 69px;
+        font-family: 'Proxima Nova Condensed';
+        text-decoration: none;
+        padding-bottom: 4px;
+        border-bottom: 2px solid transparent;
+
+    }
+    .nav__link:hover{
+        border-bottom: 2px solid #08a1c7;
+    }
+    .active-drop{
+        border-bottom: 2px solid #08a1c7;
+    }
+    .nav-links{
+        padding: 38px 115px 33px 0;
+        flex-direction: column;
+    }
+    .nav_logo{
+        margin-top: 29px;
+        margin-left: 29px;
+        height: 36px;
+    }
+    .subtop-left{
+        max-width: 374px;
+        overflow: hidden;
+    }
+    .right-content{
+        display: none;
+    }
+    .subtop-left a{
+        margin: 0 13px;
+    }
+    .subtop{
+        position: relative;
+        margin: 0;
+        z-index: 2;
+    }
+    .subtop-right{
+        margin: auto;
+    }
+    .subtop-item{
+        width: 140px;
+        align-items: center;
+        margin-left: 7px;
+    }
+    .subtop-item:last-child{
+        width: 170px;
+    }
+    .subtop-item p,
+    .subtop-item span{
+        font-size: 14px;
+    }
+    .subtop-item p {
+        margin-left: 5px;
+    }
+    .left-content{
+        margin: 20px auto auto auto;
+        /*overflow: hidden;*/
+    }
+    .content{
+        width: 688px;
+        padding-bottom: 5px;
+    }
+    .top-right{
+        margin: auto;
+        z-index: 3;
+    }
+    .top-left{
+        width: 228px;
+        margin-left: 0;
+    }
+    .top{
+        position: relative;
+        width: 668px;
+        margin: auto;
+    }
+    .share{
+        width: 688px;
+        margin-left: -10px;
+    }
+    .share a {
+        padding: 15px 29px 12px 29px;
+    }
+    #disqus_thread{
+        min-height: auto;
+    }
+    .ads{
+        width: 688px;
+        margin-left: -10px;
+    }
+    .ad{
+        max-width: 294px;
+    }
+    .left-img{
+        width: 295px;
+    }
+    .banner-last{
+        margin-top: 10px;
+    }
+    .bottom__links{
+        display: none;
+    }
+}
+@media screen and (max-width: 560px) {
     html {
         -webkit-text-size-adjust: none;
         overflow-x: hidden;
-    }
-    body{
-        /*overflow-x: hidden;*/
     }
     .bg-wrap{
         overflow: hidden;
