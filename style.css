@@ -242,12 +242,24 @@
   font-style: normal;
 }
 @font-face {
+font-family: 'Raleway-Light';
+src: url('fonts/Raleway-Light.ttf');
+font-weight: 200;
+font-style: normal;
+}
+@font-face {
   font-family: 'Raleway-Bold';
   src: url('fonts/Raleway-Bold.ttf'),
   url('fonts/Raleway-Bold.woff'),
   url('fonts/Raleway-Bold.woff2');
   font-weight: 500;
   font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-ExtraLight";
+  src: url("fonts/Raleway-ExtraLight.ttf");
+  font-style: normal;
+  font-weight: normal;
 }
 
 p{
@@ -270,16 +282,16 @@ input {outline:none;}
    width: 180px;
  }
  .call-2{
-   width: 360px;
+   width: 380px;
  }
  .call-3{
-   width: 540px;
+   width: 590px;
  }
  .call-mac{
    width: 500px;
  }
  .call-4{
-   width: 720px;
+   width: 780px;
  }
  .call-5{
    width: 900px;
@@ -315,11 +327,15 @@ input {outline:none;}
   margin: auto;
 }
 .container{
-  padding: 19px 0 0 0;
+  padding: 20px;
 }
 .nav{
+  max-height: 92px;
   background-color: #fff;
 border-bottom: 1px solid #dedede;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(241,241,241,1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(241,241,241,1);
+  box-shadow: 0px 0px 5px 3px rgba(241,241,241,1);
 }
 .main{
 }
@@ -377,13 +393,14 @@ border-bottom: 1px solid #dedede;
 /*}*/
 .device-btn__wrap{
   position: relative;
-  bottom: -78px;
+  bottom: -44px;
   left: 92px;
 }
 .device-btn__wrap span{
   align-items: initial;
   margin: 19px -5px 0px 12px;
   color: #ccc;
+  font-family: 'Proxima Nova Light';
 }
 .shadow-container{
   -webkit-box-shadow: 0px 0px 6px 2px rgba(241,241,241,1);
@@ -399,13 +416,18 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 .device{
   background: url(img/main.png) no-repeat top;
   left: 449px;
-  padding-bottom: 500px;
+  padding-bottom: 285px;
+  padding-bottom: 273px;
   background-size: cover;
+  -webkit-box-shadow: 0px 4px 5px 0px rgba(234,234,234,1);
+  -moz-box-shadow: 0px 4px 5px 0px rgba(234,234,234,1);
+  box-shadow: 0px 4px 5px 0px rgba(234,234,234,1);
 }
 .device-title{
   font-family: 'Raleway-Thin';
   font-weight: 100;
-  font-size: 67px;
+  font-size: 64px;
+  max-width: 650px;
   position: relative;
   left: 91px;
 }
@@ -414,16 +436,15 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .device-content{
   position: relative;
-  right: -42%;
-  top: 105px;
-  transform: scale(0.9);
+  right: -42.4%;
+  top: 88px;
 }
 .device-text{
-  font-family: 'Raleway-Thin';
+  font-family: 'Raleway-ExtraLight';
   font-weight: 100;
   position: relative;
   font-size: 33px;
-  bottom: -33px;
+  bottom: -13px;
   left: 91px;
 }
 .device-text b{
@@ -434,7 +455,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   height: 36px;
 }
 .nav_logo-text{
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-Light';
     font-size: 23px;
     position: relative;
     left: 43px;
@@ -468,6 +489,12 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   color: #ffffff;
   padding-left: 20px;
   font-family: 'Proxima Nova Light';
+  font-size: 17px;
+}
+.device-desktop{
+  position: relative;
+  left: 278px;
+  top: -57px;
 }
 .device-btn:hover{
   cursor: pointer;
@@ -493,6 +520,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .device-btn-more a{
   color: #660080;
+  font-size: 17px;
   padding-left: 20px;
   font-family: 'Proxima Nova Light';
 }
@@ -501,6 +529,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .left-block__title{
   font-family: 'Raleway-Bold';
+  font-size: 23px;
 }
 .device-btn-more img{
   display: inline-block;
@@ -537,6 +566,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .mail-icon{
   height: 12px;
+  margin-top: 2px;
   width: 16px;
 }
 .fr{
@@ -546,7 +576,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   margin: 100px 0 80px 0;
   font-family: 'Raleway-Thin';
   font-weight: 100;
-  font-size: 38px;
+  font-size: 50px;
 }
 .content-question{
   align-items: center;
@@ -589,6 +619,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .connect__title{
   padding-top: 120px;
+  margin-left: -5px;
   font-family: 'Raleway-Thin';
   font-size: 56px;
   color: #fff;
@@ -635,6 +666,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   padding: 10px 0 14px 0;
   border: none;
   background: none;
+  font-family: 'Proxima Nova Light';
   border-bottom: 1px solid #fff;
   color: #b4e1ec;
   font-size: 17px;
@@ -680,14 +712,14 @@ form.blue .connect__form-btn:hover{
   height: 15px;
 }
 .invest{
-  padding-top: 120px;
+  padding-top: 108px;
   background: #fff;
   -webkit-box-shadow: 0px 10px 17px -5px rgba(229,229,229,1);
 -moz-box-shadow: 0px 10px 17px -5px rgba(229,229,229,1);
   box-shadow: 0px 10px 17px -5px rgba(229,229,229,1);
 }
 .invest-ing-img{
-  padding: 20px 0 83px 0;
+  padding: 15px 0 83px 0;
   width: 16px;
 }
 .invest-ing-img:hover{
@@ -700,8 +732,11 @@ form.blue .connect__form-btn:hover{
 }
 .invest__title{
   font-size: 23px;
-    font-family: 'Raleway-Bold';
-    font-weight: 600;
+  font-family: 'Raleway-Bold';
+  font-weight: 600;
+  margin-bottom: 6px;
+  margin-top: 20px;
+  line-height: 2em;
 }
 .invest__content-item{
   text-align: center;
@@ -713,7 +748,7 @@ form.blue .connect__form-btn:hover{
   font-family: 'Proxima Nova Light';
   color: #a6a6a6;
   font-size: 14px;
-  line-height: 2em;
+  /*line-height: 1.5em;*/
 }
 .flex-block__bottom-subtitle{
   font-family: 'Proxima Nova Light';
@@ -721,6 +756,7 @@ form.blue .connect__form-btn:hover{
 }
 .kard{
   padding-top: 121px;
+  margin: auto;
 }
 .kard-block{
   background: #fff;
@@ -732,26 +768,36 @@ form.blue .connect__form-btn:hover{
 .kard-block__title{
   font-family: 'Raleway-Bold';
   font-size: 23px;
-  margin-top: 51px;
+  margin-top: 56px;
+  margin-bottom: 0;
 }
 .kard-wrapper{
   width: 280px;
+  margin: 0 60px;
 }
 .kard-graph-wrap{
   width: 720px;
+  margin: 60px 60px 60px 20px;
 }
 .flex-content{
   display: flex;
 }
 .kard-block__img{
-  margin-top: 60px;
-  padding-right: 25px;
+  /*margin-top: 60px;*/
+  /*padding-right: 25px;*/
+}
+.img-second{
+  margin-top: 0;
+  width: 270px;
+  height: 305px;
 }
 .kard-block__text{
   font-family: 'Proxima Nova Light';
   font-size: 17px;
-  margin-top: 58px;
+  margin-top: 49px;
+  line-height: 1.5em;
   margin-bottom: 58px;
+  max-width: 350px;
 }
 .more-btn{
   width: 150px;
@@ -765,8 +811,13 @@ form.blue .connect__form-btn:hover{
   cursor: pointer;
   background: #000;
 }
+.graphik{
+  width: 720px;
+}
 .kard-main_title{
+  margin-top: 0;
   font-family: 'Raleway-Thin';
+  margin-bottom: 48px;
   font-size: 56px;
   font-weight: 100;
 }
@@ -778,6 +829,7 @@ form.blue .connect__form-btn:hover{
 .kard-block-tab{
   padding: 4px 12px 4px 12px;
   font-family: 'Proxima Nova Light';
+  cursor: pointer;
 }
 .kard-block-tab:hover{
   background: #660080;
@@ -792,18 +844,31 @@ form.blue .connect__form-btn:hover{
   border-bottom: 2px solid #660080;
 }
 .kard-name-links{
-  margin: 13px 0 22px 0;
+  margin: 4px 0 13px 0;
   padding: 13px 0 6px 0;
   margin-left: -11px;
+  width: 680px;
+  cursor: pointer;
+}
+.text-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+
 }
 .title-block__item--grey{
   color: #a6a6a6;
   font-family: 'Proxima Nova Light';
+  margin-top: 16px;
+  font-size: 17px;
 }
 .title-block__item{
   margin-left: 4px;
   color: #660080;
   font-family: 'Proxima Nova Light';
+  font-size: 17px;
 }
 .title-block__item:hover{
   color: #9e9e9e;
@@ -813,17 +878,18 @@ form.blue .connect__form-btn:hover{
   font-family: 'Proxima Nova Light';
   color: #a6a6a6;
   font-size: 14px;
-  margin-top: 35px;
+  line-height: 1.5em;
+  margin-top: 30px;
   margin-bottom: 57px;
 }
 .item__text a{
   color: #08a1c7;
 }
 .items{
-  padding-top: 63px;
+  padding-top: 20px;
 }
 .item__title {
-  margin-top: 40px;
+  margin-top: 32px;
   font-family: 'Raleway-Bold';
   font-size: 23px;
 }
@@ -845,20 +911,35 @@ form.blue .connect__form-btn:hover{
   margin-top: 23px;
 }
 .info-header{
-  margin-top: 50px;
+  margin-top: 34px;
+  margin-left: 20px;
 }
 .info{
   flex-wrap: wrap;
 }
 .info__title{
   margin-left: 8px;
+  font-family: Raleway-Bold;
+  font-size: 23px;
 }
 .info__content{
-  margin-bottom: 119px;
+  margin-bottom: 115px;
+  padding-left: 20px;
 }
 .command{
   background: #fff;
   position: relative;
+}
+.shadow-block{
+  -webkit-box-shadow: 0px -3px 5px 0px rgba(241,241,241,1),
+  3px 0px 5px 0px rgba(241,241,241,1),
+  -3px 0px 5px 0px rgba(241,241,241,1);
+  -moz-box-shadow: 0px -3px 5px 0px rgba(241,241,241,1),
+  3px 0px 5px 0px rgba(241,241,241,1),
+  -3px 0px 5px 0px rgba(241,241,241,1);
+  box-shadow: 0px -3px 5px 0px rgba(241,241,241,1),
+  3px 0px 5px 0px rgba(241,241,241,1),
+  -3px 0px 5px 0px rgba(241,241,241,1);
 }
 .command-subtitle-img{
   width: 16px;
@@ -885,6 +966,7 @@ form.blue .connect__form-btn:hover{
 .command__personal{
   margin-top: 18px;
   color: #a6a6a6;
+  line-height: 1.5em;
   font-size: 14px;
   font-family: 'Proxima Nova Light';
 }
@@ -971,7 +1053,7 @@ article{
   overflow: hidden;
 }
 .main__content-right{
-  margin-right: 240px;
+  margin-right: 160px;
 }
 .main__content-left{
   margin: auto;
@@ -1035,6 +1117,7 @@ input[type=range]:hover{
 .mail-block{
   display: flex;
   align-items: center;
+  margin-top: 16px;
 }
 .open{
   border: 1px solid #fff;
@@ -1078,6 +1161,8 @@ input[type="submit"]{
 .info__text{
   font-family: 'Proxima Nova Light';
   font-size: 14px;
+  max-width: 530px;
+  line-height: 1.5em;
 }
 /* Контейнер слайдера */
 .ui-slider {
@@ -1122,7 +1207,7 @@ input[type="submit"]{
     /*!*width: 500px;*!*/
   /*!*}*!*/
 /*}*/
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 560px) and (max-width: 1024px) {
   .call{
     width: 136px;
   }
@@ -1255,9 +1340,6 @@ input[type="submit"]{
   }
   .second_text{
     padding: 0 30px;
-  }
-  .img-second{
-    margin-top: 0;
   }
   .kard-block__text{
     font-size: 15px;
