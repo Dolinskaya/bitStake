@@ -172,7 +172,7 @@
                       <div class="call-4 flex kard-name-links slider-text">
                         <a href="" class="kard-block-tab">Ethereum</a>
                         <a href="" class="kard-block-tab">DigiByte</a>
-                        <a href="" class="kard-block-tab">Litecoin</a>
+                        <a href="" class="kard-block-tab active-links">Litecoin</a>
                         <a href="" class="kard-block-tab">Dash</a>
                         <a href="" class="kard-block-tab">Siacoin</a>
                         <a href="" class="kard-block-tab">BitShares</a>
@@ -182,8 +182,8 @@
                         <a href="" class="kard-block-tab">Monero</a>
                       </div>
                         <img src="img/btn-next.png" class="control_next">
-                        <div class="call-2 flex">
-                          <a href="" class="kard-block__link">10</a>
+                        <div class="call-2 flex tap-container">
+                          <a href="" class="kard-block__link active">10</a>
                           <a href="" class="kard-block__link">20</a>
                           <a href="" class="kard-block__link">30</a>
                           <a href="" class="kard-block__link">40</a>
@@ -354,8 +354,10 @@
                   <div class="calc-wrap ma">
                     <h3 class="calc__sum">Ваш заработок составил бы</h3>
                     <b>130$</b>
-                        <br><input type="submit" class="open call" value="Открыть вклад">
-                        <img src="img/check.png" alt="" class="btn-open">
+                        <div class="submit-open">
+                            <a href="#" class="open call">Открыть вклад</a>
+                            <img src="img/check.png" alt="" class="btn-open">
+                        </div>
                   </div>
                 </div>
               </div>
@@ -367,8 +369,18 @@
             </div>
       </div>
   <div id="slider"></div>
-    <canvas style="background: #fff; border: 1px solid #660080;" width="721" height="164">Ваш браузер не поддерживает рисование</canvas>
-
+    <canvas id="canvas" style="background: #fff; border: 1px solid #660080;" width="721" height="164">Ваш браузер не поддерживает рисование</canvas>
+  <script>
+      var canvas = document.getElementById("canvas");
+      var context = canvas.getContext("2d");
+      context.beginPath();
+      context.moveTo(0, 8);
+      context.bezierCurveTo(140, 10, 388, 10, 388, 170);
+      context.lineWidth = 10;
+      // line color
+      context.strokeStyle = "black";
+      context.stroke();
+  </script>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.tap.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>

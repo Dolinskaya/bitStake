@@ -409,15 +409,15 @@ border-bottom: 1px solid #dedede;
 }
 .main__bg{
   background-color: #fff;
+  padding-top: 90px;
   -webkit-box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 -moz-box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .device{
-  background: url(img/main.png) no-repeat top;
+  background: url(img/main--new.png) no-repeat;
   left: 449px;
-  padding-bottom: 285px;
-  padding-bottom: 273px;
+  height: 690px;
   background-size: cover;
   -webkit-box-shadow: 0px 4px 5px 0px rgba(234,234,234,1);
   -moz-box-shadow: 0px 4px 5px 0px rgba(234,234,234,1);
@@ -437,7 +437,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 .device-content{
   position: relative;
   right: -42.4%;
-  top: 88px;
+  top: 3px;
 }
 .device-text{
   font-family: 'Raleway-ExtraLight';
@@ -605,15 +605,15 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
 }
 .connect-wrap{
   background: #660080;
-  background-image: url('img/bg-connect.png');
-  padding-bottom: 358px;
+  background-image: url('img/bg-connect--new.png');
+  height: 587px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .connect-wrap-blue{
   background: #660080;
-  background-image: url('img/blue-bg.png');
-  padding-bottom: 358px;
+  background-image: url('img/blue-bg--new.png');
+  height: 587px;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -627,12 +627,13 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   font-weight: 100;
 }
 .connect__text span{
-  font-family: 'Raleway-Bold';
+  font-family: 'Proxima Nova Bold';
 }
 
 .connect__text{
-  font-family: 'Raleway-Thin';
+  font-family: 'Proxima Nova Light';
   color: #fff;
+  font-size: 17px;
 }
 .connect__form{
   margin-top: 40px;
@@ -667,7 +668,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   border: none;
   background: none;
   font-family: 'Proxima Nova Light';
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #b4e1ec;
   font-size: 17px;
   font-weight: 100;
@@ -677,19 +678,24 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   color: #c98fd8;
   font-size: 17px;
   font-weight: 100;
+  font-family: 'Proxima Nova Light';
 }
 .connect__form-email::placeholder,
 .connect__form-psw::placeholder{
     color: #b4e1ec;
     font-size: 17px;
     font-weight: 100;
+  font-family: 'Proxima Nova Light';
 }
 .connect__form-btn{
   border: 1px solid #fff;
-  padding: 10px 0 10px 33px;
+  padding: 15px 0 15px 7px;
   background: none;
   color: #fff;
   font-size: 17px;
+}
+.command__subtitle{
+  font-family: "Raleway-Bold";
 }
 form.pink .connect__form-btn:hover{
   background: #fff;
@@ -704,10 +710,12 @@ form.blue .connect__form-btn:hover{
 }
 .btn-wrap{
   position: relative;
+  display: flex;
+  margin-top: -6px;
+  align-items: center;
 }
 .btn-img{
   position: absolute;
-  top: 30%;
   left: 82px;
   height: 15px;
 }
@@ -831,18 +839,18 @@ form.blue .connect__form-btn:hover{
   font-family: 'Proxima Nova Light';
   cursor: pointer;
 }
-.kard-block-tab:hover{
-  background: #660080;
-  color: #fff;
-}
+/*.kard-block-tab:hover{*/
+  /*background: #660080;*/
+  /*color: #fff;*/
+/*}*/
 .kard-block__link{
   border-bottom: 2px solid transparent;
   font-family: 'Proxima Nova Light';
 }
-.kard-block__link:hover{
-  color: #660080;
-  border-bottom: 2px solid #660080;
-}
+/*.kard-block__link:hover{*/
+  /*color: #660080;*/
+  /*border-bottom: 2px solid #660080;*/
+/*}*/
 .kard-name-links{
   margin: 4px 0 13px 0;
   padding: 13px 0 6px 0;
@@ -964,7 +972,7 @@ form.blue .connect__form-btn:hover{
   font-family: 'Proxima Nova Light';
 }
 .command__personal{
-  margin-top: 18px;
+  margin-top: 9px;
   color: #a6a6a6;
   line-height: 1.5em;
   font-size: 14px;
@@ -1003,7 +1011,7 @@ form.blue .connect__form-btn:hover{
   height: 80px;
 }
 .command-subheader{
-  padding-top: 76px;
+  padding-top: 0;
 }
 .command__images{
   padding-top: 36px;
@@ -1061,10 +1069,13 @@ article{
 .calc__title{
   padding-top: 120px;
   font-family: 'Raleway-Thin';
+  margin-bottom: 44px;
   font-size: 56px;
   font-weight: 100;
 }
 .calc__sum{
+  margin-top: 0;
+  margin-bottom: 11px;
   padding-top: 60px;
   color: #a6a6a6;
   font-size: 17px;
@@ -1076,7 +1087,7 @@ article{
   font-family: 'Proxima Nova Bold';
 }
 .calc__desc{
-  padding-top: 181px;
+  padding-top: 195px;
   color: #a6a6a6;
   font-family: 'Proxima Nova Light';
 }
@@ -1087,7 +1098,7 @@ input[type=range]:hover{
   cursor: pointer;
 }
 .footer__title{
-    font-family: 'Proxima Nova Light';
+    font-family: 'Raleway-Bold';
     font-size: 23px;
 }
 .footer__desc{
@@ -1120,24 +1131,31 @@ input[type=range]:hover{
   margin-top: 16px;
 }
 .open{
-  border: 1px solid #fff;
-  padding: 10px 0 10px 17px;
-  background: #660080;
   color: #fff;
-  margin-top: 54px;
   z-index: 1;
+  font-size: 17px;
   position: relative;
+  font-family: "Proxima Nova Light";
 }
-.open:hover{
+.submit-open{
+  text-align: center;
+  position: relative;
+  padding: 15px 0 15px 15px;
+  width: 260px;
+  background: #660080;
+  margin-top: 34px;
+}
+.submit-open:hover{
   background: #000;
   cursor: pointer;
 }
 .btn-open{
-  position: relative;
-  right: 145px;
-  bottom: -4px;
+  position: absolute;
+  top: 36%;
+  left: 57px;
   height: 15px;
   z-index: 1;
+}
   }
   .calc-wrap span{
     color: #08a1c7;
@@ -1148,7 +1166,7 @@ input[type=range]:hover{
   .calc-wrap p{
     color: #a6a6a6;
     font-size: 14px;
-    line-height: 2.5em;
+    line-height: 2.7em;
     font-weight: 100;
     font-family: 'Proxima Nova Light';
   }
@@ -1191,13 +1209,21 @@ input[type="submit"]{
   top: -6px;
   margin-left: -6px;
 }
+.active{
+  color: #660080;
+  border-bottom: 2px solid #660080;
+}
+.active-links{
+  background: #660080;
+  color: #fff;
+}
 /* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
   -webkit-appearance: none;
-  background-color: #777;
+  background-color: #dedede;
   height: 2px;
-  width: 222px;
-  margin-top: 37px;
+  width: 260px;
+  margin-top: 26px;
 }
 .control_next{
   display: none;
@@ -1312,14 +1338,6 @@ input[type="submit"]{
   }
   .info__title{
     font-size: 17px;
-  }
-  .active{
-    color: #660080;
-    border-bottom: 2px solid #660080;
-  }
-  .active-links{
-    background: #660080;
-    color: #fff;
   }
   .info__content{
     margin-bottom: 60px;

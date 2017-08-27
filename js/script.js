@@ -125,6 +125,17 @@ $(document).ready(function(){
     $('a').click(function(e) {
         e.preventDefault();
     });
+
+    $('.tap-container').on('click', '.kard-block__link', function(e) {
+        e.preventDefault();
+        $(".tap-container .kard-block__link").removeClass("active");
+        $(this).toggleClass('active');
+    });
+    $('.kard-name-links').on('click', '.kard-block-tab', function(e) {
+        e.preventDefault();
+        $(".kard-name-links .kard-block-tab").removeClass("active-links");
+        $(this).toggleClass('active-links');
+    });
     $('img.control_next').tap(function(e) {
         e.preventDefault();
         moveRight();
