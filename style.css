@@ -868,6 +868,7 @@ form.blue .connect__form-btn:hover{
   height: 100%;
   background: #fff;
   left: 8px;
+  top: -16px;
   z-index: 21;
 }
 .text-center{
@@ -1367,6 +1368,9 @@ td{
   td{
     font-size: 13px;
   }
+  .main__content__title{
+    width: 630px;
+  }
   .kard-graph-wrap{
     width: 566px;
     position: relative;
@@ -1401,7 +1405,7 @@ td{
     transform: scale(0.9);
   }
   .main__content-header {
-    margin: 0;
+    margin: auto;
   }
   .main__content__title{
     font-size: 44px;
@@ -1429,10 +1433,14 @@ td{
     font-size: 23px;
   }
   .main__content__title {
-    margin: 60px 0 80px 0;
+    margin: 98px 0 80px 0;
   }
   .content-question{
-    margin-top: 0;
+    margin-top: 21px;
+  }
+  .main__content-left {
+    margin: auto;
+    margin-top: -31px;
   }
   .left-block__title {
     font-size: 17px;
