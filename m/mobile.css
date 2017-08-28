@@ -821,6 +821,7 @@ input {outline:none;}
 .item__text{
     font-family: 'Proxima Nova Light';
     color: #a6a6a6;
+    line-height: 1.5em;
     font-size: 14px;
     margin-top: 20px;
     padding-bottom: 20px;
