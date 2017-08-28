@@ -180,10 +180,52 @@
                 </div>
                 <div class="call-2 ma">
                     <div class="kard-graph-wrap ma">
-                        <img class="kard-block__img" src="img/graph-mob.png">
+                        <div class="kard-block__img graphik">
+                            <table class="line-container">
+                                <tbody>
+                                <tr>
+                                    <td style="text-indent: 3px;">2016</td>
+                                    <td class="table-title">Рост курса валюты <span>Litecoin</span></td>
+                                    <td style="text-align: right;">2017</td>
+                                </tr>
+                                <tr collspan="3">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="fix"></div>
+                            <div class="canvasContainer">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <div class="canvas_min">$42.6</div>
+                            <div class="canvas_max">$89.1</div>
+                        </div>
+                        <!--<img class="kard-block__img" src="img/graph-mob.png">-->
                         <div class="call-2 flex kard-name-links slider-text">
                             <a href="" class="kard-block-tab">Ethereum</a>
-                            <a href="" class="kard-block-tab">DigiByte</a>
+                            <a href="" class="kard-block-tab active-links">DigiByte</a>
                             <a href="" class="kard-block-tab">Litecoin</a>
                             <a href="" class="kard-block-tab">Dash</a>
                             <a href="" class="kard-block-tab">Siacoin</a>
@@ -195,7 +237,7 @@
                         </div>
                         <img src="img/btn-next.png" class="control_next">
                         <div class="call-2 flex no-margin tap-container">
-                            <a href="" class="kard-block__link">10</a>
+                            <a href="" class="kard-block__link active">10</a>
                             <a href="" class="kard-block__link">20</a>
                             <a href="" class="kard-block__link">30</a>
                             <a href="" class="kard-block__link">40</a>
@@ -372,10 +414,12 @@
         <img src="img/lg.png" alt="" class="footer__logo ma">
     </div>
 </div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="js/jquery.tap.js"></script>
 <script type="text/javascript" src="mobile.js"></script>
+<script type="text/javascript" src="js/canvas.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 </html>

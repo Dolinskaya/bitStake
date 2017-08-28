@@ -50,7 +50,7 @@
     </div>
       <div class="main__content ma">
         <div class="main__content__wrap">
-          <div class="main__content-header call-6 ma flex">
+          <div class="main__content-header call-6 flex">
             <h1 class="main__content__title call-4" id="steps">Как работает система BitStake</h1>
             <div class="fr call-2 flex content-question">
               <p class="title-block__item--grey call">Остались вопросы?</p>
@@ -166,11 +166,52 @@
                     <p class="kard-block__text second_text">Только посмотрите как взлетели эти валюты, а теперь представьте, что Вы купили их на раннем этапе. При этом, даже если не говорить о таких больших взлетах, посмотрите на ТОП 100 популярных валют.</p>
                   </div>
                 </div>
-                  <div class="fr call-4">
+                  <div class="fr call-4 sub-block">
                     <div class="kard-graph-wrap">
-                      <img class="kard-block__img call-4 graphik" src="img/graph.png">
+                        <div class="kard-block__img call-4 graphik">
+                            <table class="line-container">
+                                <tbody>
+                                <tr>
+                                    <td style="text-indent: 3px;">2016</td>
+                                    <td class="table-title">Рост курса валюты <span>Litecoin</span></td>
+                                    <td style="text-align: right;">2017</td>
+                                </tr>
+                                <tr collspan="3">
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <div class="fix"></div>
+                            <div class="canvasContainer">
+                                <canvas id="myChart"></canvas>
+                            </div>
+                            <div class="canvas_min">$42.6</div>
+                            <div class="canvas_max">$89.1</div>
+                        </div>
+                      <!--<img class="kard-block__img call-4 graphik" src="img/graph.png">-->
                       <div class="call-4 flex kard-name-links slider-text">
-                        <a href="" class="kard-block-tab">Ethereum</a>
                         <a href="" class="kard-block-tab">DigiByte</a>
                         <a href="" class="kard-block-tab active-links">Litecoin</a>
                         <a href="" class="kard-block-tab">Dash</a>
@@ -180,6 +221,7 @@
                         <a href="" class="kard-block-tab">Stratis</a>
                         <a href="" class="kard-block-tab">Potcoin</a>
                         <a href="" class="kard-block-tab">Monero</a>
+                          <a href="" class="kard-block-tab">Ethereum</a>
                       </div>
                         <img src="img/btn-next.png" class="control_next">
                         <div class="call-2 flex tap-container">
@@ -369,22 +411,12 @@
             </div>
       </div>
   <div id="slider"></div>
-    <canvas id="canvas" style="background: #fff; border: 1px solid #660080;" width="721" height="164">Ваш браузер не поддерживает рисование</canvas>
-  <script>
-      var canvas = document.getElementById("canvas");
-      var context = canvas.getContext("2d");
-      context.beginPath();
-      context.moveTo(0, 8);
-      context.bezierCurveTo(140, 10, 388, 10, 388, 170);
-      context.lineWidth = 10;
-      // line color
-      context.strokeStyle = "black";
-      context.stroke();
-  </script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
   <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="js/jquery.tap.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/canvas.js"></script>
   <script type="text/javascript" src="js/slick.min.js"></script>
 </body>
 </html>

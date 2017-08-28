@@ -785,7 +785,8 @@ form.blue .connect__form-btn:hover{
 }
 .kard-graph-wrap{
   width: 720px;
-  margin: 60px 60px 60px 20px;
+  margin: 76px 60px 60px 20px;
+  position: relative;
 }
 .flex-content{
   display: flex;
@@ -821,6 +822,7 @@ form.blue .connect__form-btn:hover{
 }
 .graphik{
   width: 720px;
+  /*position: relative;*/
 }
 .kard-main_title{
   margin-top: 0;
@@ -852,11 +854,21 @@ form.blue .connect__form-btn:hover{
   /*border-bottom: 2px solid #660080;*/
 /*}*/
 .kard-name-links{
-  margin: 4px 0 13px 0;
+  margin: -20px 0 13px 0;
   padding: 13px 0 6px 0;
-  margin-left: -11px;
+  margin-left: -3px;
   width: 680px;
   cursor: pointer;
+  position: relative;
+  z-index: 5000;
+}
+.fix{
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background: #fff;
+  left: 8px;
+  z-index: 21;
 }
 .text-center{
   display: flex;
@@ -871,6 +883,9 @@ form.blue .connect__form-btn:hover{
   font-family: 'Proxima Nova Light';
   margin-top: 16px;
   font-size: 17px;
+}
+.tap-container{
+  margin-left: 9px;
 }
 .title-block__item{
   margin-left: 4px;
@@ -1130,6 +1145,9 @@ input[type=range]:hover{
   align-items: center;
   margin-top: 16px;
 }
+.main__content-header {
+  margin: auto;
+}
 .open{
   color: #fff;
   z-index: 1;
@@ -1156,7 +1174,6 @@ input[type=range]:hover{
   height: 15px;
   z-index: 1;
 }
-  }
   .calc-wrap span{
     color: #08a1c7;
     font-weight: 500;
@@ -1228,12 +1245,104 @@ input[type="submit"]{
 .control_next{
   display: none;
 }
-/*@media screen and (min-width: 1024px) and (max-width: 1280px) {*/
-  /*!*.call-2{*!*/
-    /*!*width: 500px;*!*/
-  /*!*}*!*/
-/*}*/
-@media screen and (min-width: 560px) and (max-width: 1024px) {
+.canvasContainer{
+  position: relative;
+  width: 720px;
+  height: 163px;
+  /*border-top: 1px solid rgba(209, 209, 209, 1);*/
+  /*border-bottom: 1px solid rgba(209, 209, 209, 1);*/
+}
+td{
+  line-height: 2em;
+  border-top: 1px solid rgba(209, 209, 209, 1);
+  width: 35%;
+  height: 28px;
+  color: #a6a6a6;
+  font-size: 14px;
+  font-family: "Proxima Nova Light";
+}
+.line-container{
+  position: absolute;
+  border-spacing: 0;
+  top: -15px;
+  left: 9px;
+  width: 707px;
+  text-align: -webkit-center;
+}
+.table-title{
+  text-align: center;
+}
+.table-title span{
+  font-family: "Proxima Nova Bold";
+  color: #660080;
+}
+.line{
+  width: 97.8%;
+  height: 1px;
+  background: rgba(209, 209, 209, 1);
+  margin: 30px 0;
+}
+.canvas_min,
+.canvas_max{
+  padding: 4px 10px;
+  position: absolute;
+  background: #08a1c7;
+  color: #fff;
+  font-family: "Proxima Nova Light";
+  font-size: 14px;
+}
+.canvas_min{
+  left: 9px;
+  bottom: 74px;
+}
+.canvas_max{
+  right: 5.1px;
+  top: 12px;
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1300px){
+  .device{
+    background: url(img/bg-1280.png) no-repeat;
+    height: 690px;
+    background-size: cover;
+  }
+  .device-content {
+    right: -37.8%;
+  }
+  .canvas_max {
+    right: 5px;
+  }
+  .kard-name-links{
+    margin-left: 6px;
+    width: 600px;
+    padding: 13px 0 6px 0;
+  }
+  .tap-container {
+    margin-left: 11px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1249px){
+  .line-container {
+    width: 55.9vw;
+  }
+  .fix{
+    top: -18px;
+  }
+  .canvasContainer {
+    width: 57vw;
+  }
+  .table-title{
+    width: 100%;
+  }
+  td{
+    width: 10%;
+  }
+  .canvas_max {
+    right: 2.9vw;
+    top: 12px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
   .call{
     width: 136px;
   }
@@ -1252,14 +1361,38 @@ input[type="submit"]{
   .call-6{
   width: 916px;
   }
+  .container{
+    padding: 0;
+  }
+  td{
+    font-size: 13px;
+  }
+  .kard-graph-wrap{
+    width: 566px;
+    position: relative;
+  }
+  .canvasContainer{
+    width: 566px;
+  }
+  .line-container {
+    width: 552px;
+  }
+  .canvas_max {
+    right: 5px;
+  }
+  .canvas_min {
+    bottom: 86px;
+  }
   .device {
-    min-height: 570px;
     position: relative;
     left: 0;
     top: 45px;
     background: url(img/bg-mobile-1024.png) no-repeat;
-    padding-bottom: 38px;
+    height: 569px;
     background-size: cover;
+  }
+  .submit-open{
+    width: 201px;
   }
   .device-content {
     position: relative;
@@ -1267,9 +1400,30 @@ input[type="submit"]{
     top: 12px;
     transform: scale(0.9);
   }
+  .main__content-header {
+    margin: 0;
+  }
+  .main__content__title{
+    font-size: 44px;
+  }
   .device-title{
     width: 319px;
     font-size: 44px;
+  }
+  .title-block__item{
+    font-size: 15px;
+  }
+  .content-question{
+    width: 265px;
+  }
+  .mail-block{
+    width: 119px;
+  }
+  .main__bg{
+    padding-top: 0;
+  }
+  .connect__text span {
+    font-family: "Proxima Nova Bold";
   }
   .device-text{
     font-size: 23px;
@@ -1353,15 +1507,23 @@ input[type="submit"]{
     width: 549px;
   }
   .second{
-    padding: 0 30px;
+    /*padding: 0 30px;*/
     width: 140px;
   }
+  .connect__text{
+    font-family: "Proxima Nova Light";
+  }
   .second_text{
-    padding: 0 30px;
+    width: 213px;
   }
   .kard-block__text{
     font-size: 15px;
     margin-top: 37px;
+    margin-bottom: 50px;
+    line-height: 1.3em;
+  }
+  .sub-block{
+    margin-left: -2px;
   }
   .kard{
     padding-top: 20px;
@@ -1390,10 +1552,14 @@ input[type="submit"]{
   }
   .command__subtitle{
     font-size: 17px;
-    margin-left: 35px;
+    text-indent: 23px;
+    width: 597px;
   }
   .command-subtitle-img{
     margin-top: -3px;
+    position: absolute;
+    bottom: -11px;
+    left: 0;
   }
   .command__images{
     width: 544px;
@@ -1403,18 +1569,28 @@ input[type="submit"]{
     width: 604px;
   }
   .command-subheader{
-    padding-top: 54px;
+    position: relative;
+    width: 488px;
   }
   .connect__form-email,
   .connect__form-psw{
     font-size: 15px;
+  }
+  .info__content{
+    padding-left: 10px;
+  }
+  .info-header{
+    margin-left: 10px;
+  }
+  .command{
+    padding-bottom: 54px;
   }
   .connect__form-email::placeholder,
   .connect__form-psw::placeholder{
     font-size: 15px;
   }
   .connect__title{
-    padding-top: 60px;
+    padding-top: 40px;
     font-size: 44px;
   }
   .connect__form-btn{
@@ -1422,19 +1598,25 @@ input[type="submit"]{
   }
   .connect__text{
     font-size: 15px;
+    width: 950px;
+  }
+  .device-desktop{
+    position: absolute;
+    left: 0;
+    top: 58px;
   }
   .connect__form {
     margin-top: 38px;
   }
   .connect-wrap{
-    background-image: url('img/pink-bg-1024.png');
-    padding-bottom: 120px;
+    background-image: url(img/pink-bg-1024.png);
+    height: 331px;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .connect-wrap-blue{
     background: url("img/blue-bg-1024.png");
-    padding-bottom: 120px;
+    height: 331px;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1451,6 +1633,10 @@ input[type="submit"]{
   .calc__title{
     font-size: 38px;
     padding-top: 62px;
+    width: 543px;
+  }
+  .kard-wrapper {
+    margin: 0 40px;
   }
   .calc__desc {
     font-size: 15px;
@@ -1471,10 +1657,19 @@ input[type="submit"]{
     width: 216px;
   }
   .btn-open{
-    right: 127px;
+    left: 39px;
+  }
+  .ui-widget-content{
+    width: 222px;
+  }
+  .open{
+    font-size: 15px;
   }
   .footer{
     padding-top: 0;
+  }
+  .footer__title{
+    font-size: 17px;
   }
   .slick-next{
     position: absolute;
@@ -1485,13 +1680,16 @@ input[type="submit"]{
     overflow: hidden;
     width: 499px;
   }
+  .kard-block__img{
+    width: 566px;
+  }
   .control_next{
     display: block;
     width: 7px;
     height: 12px;
     position: relative;
     left: 535px;
-    top: -49px;
+    top: -37px;
   }
   .more-link{
     font-size: 15px;

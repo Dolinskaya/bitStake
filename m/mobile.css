@@ -249,6 +249,18 @@
     font-weight: 500;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('fonts/Raleway-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src: url("fonts/Raleway-ExtraLight.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
 
 p{
     margin-top: 0;
@@ -260,6 +272,8 @@ a{
 body{
     background: #fbfbfb;
     margin: 0;
+    width: 320px;
+    margin: auto;
 }
 input:focus{
     outline:none;
@@ -315,7 +329,7 @@ input {outline:none;}
     right: 20px;
     position: relative;
     background: #660080;
-    height: 5px;
+    height: 4px;
     z-index: 2;
 }
 .burger-drop{
@@ -334,17 +348,17 @@ input {outline:none;}
     content: '';
     width: 27px;
     background: #660080;
-    height: 5px;
+    height: 4px;
     position: absolute;
-    top: 8px;
+    top: 12px;
 }
 .burger:after{
     content: '';
     width: 27px;
     background: #660080;
-    height: 5px;
+    height: 4px;
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
 }
 .nav__mobile{
     background: #fff;
@@ -418,9 +432,9 @@ input {outline:none;}
     flex-wrap: wrap;
 }
 .device-title{
-    margin-top: 0;
-    margin-top: 29px;
-    font-family: 'Raleway-Thin';
+    margin-top: 9px;
+    margin-bottom: 22px;
+    font-family: 'Raleway-ExtraLight';
     font-weight: 100;
     font-size: 28px;
 }
@@ -431,7 +445,7 @@ input {outline:none;}
     transform: scale(0.9);
 }
 .device-text{
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-ExtraLight';
     font-weight: 100;
     font-size: 17px;
 }
@@ -443,7 +457,7 @@ input {outline:none;}
     height: 36px;
 }
 .nav_logo-text{
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-Light';
     font-size: 23px;
     position: relative;
     left: 43px;
@@ -472,7 +486,7 @@ input {outline:none;}
     background: #660080;
     width: 100%;
     display: flex;
-    height: 50px;
+    height: 56px;
     align-items: center;
 }
 .device-btn a{
@@ -496,6 +510,11 @@ input {outline:none;}
     padding-left: 5px;
     font-family: 'Proxima Nova Light';
 }
+.shadow-container{
+    -webkit-box-shadow: 0px 6px 5px -3px rgba(234,234,234,1);
+    -moz-box-shadow: 0px 6px 5px -3px rgba(234,234,234,1);
+    box-shadow: 0px 6px 5px -3px rgba(234,234,234,1);
+}
 .left-block__title{
     font-family: 'Raleway-Bold';
     font-size: 17px;
@@ -517,8 +536,8 @@ input {outline:none;}
     float: right;
 }
 .main__content__title{
-    margin: 32px 0 0px 0;
-    font-family: 'Raleway-Thin';
+    margin: 24px 0 0px 0;
+    font-family: 'Raleway-ExtraLight';
     font-weight: 100;
     font-size: 28px;
 }
@@ -562,7 +581,7 @@ input {outline:none;}
 }
 .connect__title{
     padding-top: 32px;
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-ExtraLight';
     font-size: 28px;
     color: #fff;
     margin-top: 0;
@@ -573,7 +592,7 @@ input {outline:none;}
 }
 
 .connect__text{
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-ExtraLight';
     color: #fff;
     font-size: 14px;
 }
@@ -592,10 +611,11 @@ input {outline:none;}
     padding: 10px 0 14px 0;
     border: none;
     background: none;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: #b4e1ec;
     font-size: 14px;
     font-weight: 100;
+    font-family: "Proxima Nova Light";
 }
 .pink input[type="email"]::placeholder,
 .pink input[type="password"]::placeholder{
@@ -608,6 +628,7 @@ input {outline:none;}
     color: #b4e1ec;
     font-size: 14px;
     font-weight: 100;
+    font-family: "Proxima Nova Light";
 }
 .connect__form-btn{
     border: 1px solid #fff;
@@ -640,7 +661,7 @@ input {outline:none;}
     margin-left: 20px;
 }
 .invest__title-main{
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-ExtraLight';
     font-size: 28px;
     font-weight: 100;
 }
@@ -764,7 +785,7 @@ input {outline:none;}
     border-bottom: 2px solid #660080;
 }
 .kard-name-links{
-    margin: 8px 0 22px 0;
+    margin: -5px 0 22px 0;
     padding: 13px 0 6px 0;
     margin-left: -11px;
 }
@@ -778,6 +799,15 @@ input {outline:none;}
     color: #660080;
     font-family: 'Proxima Nova Light';
     font-size: 14px;
+}
+.fix{
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #fff;
+    top: -16px;
+    left: 8px;
+    z-index: 21;
 }
 .item__text{
     font-family: 'Proxima Nova Light';
@@ -826,6 +856,7 @@ input {outline:none;}
     font-size: 17px;
     margin-top: 26px;
     margin-bottom: 0;
+    font-family: "Raleway-Bold";
 }
 .info__content{
     margin-bottom: 20px;
@@ -971,7 +1002,7 @@ article{
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 30px;
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-ExtraLight';
     font-size: 28px;
     font-weight: 100;
 }
@@ -1019,7 +1050,7 @@ article{
     color: #b4e1ec;
 }
 .footer__title{
-    font-family: 'Proxima Nova Light';
+    font-family: "Raleway-Bold";
     font-size: 17px;
 }
 .footer__desc{
@@ -1146,7 +1177,7 @@ input[type="submit"]{
 /* оформление полосы по которой ходит ползунок */
 .ui-widget-content {
     -webkit-appearance: none;
-    background-color: #777;
+    background-color: #dedede;
     height: 2px;
     width: 222px;
     margin-top: 20px;
@@ -1154,4 +1185,63 @@ input[type="submit"]{
 .result-sum,
 .result-date{
     font-family: 'Proxima Nova Bold';
+}
+.canvasContainer{
+    position: relative;
+    width: 280px;
+    height: 163px;
+    /*border-top: 1px solid rgba(209, 209, 209, 1);*/
+    /*border-bottom: 1px solid rgba(209, 209, 209, 1);*/
+}
+.graphik{
+    position: relative;
+    top: 6px;
+}
+td{
+    line-height: 2em;
+    border-top: 1px solid rgba(209, 209, 209, 1);
+    width: 10%;
+    height: 28px;
+    color: #a6a6a6;
+    font-size: 14px;
+    font-family: "Proxima Nova Light";
+}
+.line-container{
+    position: absolute;
+    border-spacing: 0;
+    top: -10px;
+    left: 11px;
+    width: 264px;
+    text-align: -webkit-center;
+}
+.table-title{
+    text-align: center;
+    width: 100%;
+}
+.table-title span{
+    font-family: "Proxima Nova Bold";
+    color: #660080;
+}
+.line{
+    width: 97.8%;
+    height: 1px;
+    background: rgba(209, 209, 209, 1);
+    margin: 30px 0;
+}
+.canvas_min,
+.canvas_max{
+    padding: 4px 10px;
+    position: absolute;
+    background: #08a1c7;
+    color: #fff;
+    font-family: "Proxima Nova Light";
+    font-size: 14px;
+}
+.canvas_min{
+    left: 9px;
+    bottom: 18px;
+}
+.canvas_max{
+    right: 5.1px;
+    top: 14px;
 }
