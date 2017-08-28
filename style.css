@@ -579,6 +579,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   font-size: 50px;
 }
 .content-question{
+  width: 338px;
   align-items: center;
   margin-top: 24px;
 }
