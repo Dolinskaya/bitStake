@@ -269,6 +269,9 @@ p{
 a{
   text-decoration: none;
 }
+html{
+  overflow-x: hidden;
+}
 body{
   margin: 0;
   padding: 0;
@@ -524,9 +527,6 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   padding-left: 20px;
   font-family: 'Proxima Nova Light';
 }
-.device-btn-more a:hover{
-  color: #9e9e9e;
-}
 .left-block__title{
   font-family: 'Raleway-Bold';
   font-size: 23px;
@@ -542,6 +542,7 @@ box-shadow: inset 0px 4px 17px -2px rgba(241,241,241,1);
   padding-left: 30px;
 }
 .device-btn img{
+  /*margin-top: 2px;*/
   left: 38px;
 }
 .device-btn__wrap span{
@@ -1075,7 +1076,7 @@ article{
     padding: 0 !important;
 }
 .main__content{
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 .main__content-right{
   margin-right: 160px;
@@ -1392,8 +1393,9 @@ td{
     position: relative;
     left: 0;
     top: 45px;
-    background: url(img/bg-mobile-1024.png) no-repeat;
-    height: 569px;
+    background: url(img/bg-mobile-1024-2.png) no-repeat;
+    /*height: 569px;*/
+    height: 592px;
     background-size: cover;
   }
   .submit-open{

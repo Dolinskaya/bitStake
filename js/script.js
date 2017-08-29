@@ -47,8 +47,10 @@ $(document).ready(function(){
     $('.device-btn-more').hover(function () {
         console.log('hover');
        $(this).find('img').attr('src', 'img/pink-plus--hover.png');
+       $(this).find('a').css('color', '#9e9e9e');
     }, function () {
         $(this).find('img').attr('src', 'img/pink-plus.png');
+        $(this).find('a').css('color', '#660080');
     });
     $('.title-block__item').hover(function () {
         $(this).prev().attr('src', 'img/mail--hover.png');
