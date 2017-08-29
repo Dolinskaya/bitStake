@@ -277,6 +277,10 @@ body{
   padding: 0;
   background: #fbfbfb;
 }
+.flex-block__bottom-title{
+  font-family: 'Raleway-Bold';
+  font-size: 23px;
+}
 input:focus{
   outline:none;
 }
@@ -1459,7 +1463,7 @@ td{
     margin-bottom: 57px;
   }
   .flex-block__bottom-title{
-    font-size: 17px;
+    font-size: 17px !important;
   }
   .flex-block__bottom-subtitle {
     font-size: 15px;
