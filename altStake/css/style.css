@@ -654,6 +654,9 @@ span, p, h1, h2, h3, h4, h5{
         margin: auto;
         height: 90px;
     }
+    .title{
+        max-width: 100%;
+    }
     .share{
         width: 688px;
         margin-left: -10px;
