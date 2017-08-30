@@ -649,6 +649,79 @@ span, p, h1, h2, h3, h4, h5{
 .back img{
     height: 14px;
 }
+.map_vertical{
+    flex-direction: column;
+    margin-top: 67px;
+}
+ul{
+    list-style: none;
+    border-left: 2px solid rgba(219, 219, 219, 1);
+    margin: 0 0 0 9px;
+    padding-bottom: 40px;
+}
+li{
+    font-family: "Proxima Nova Light";
+    font-size: 14px;
+    color: rgba(166, 166, 166, 1);
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+li .q{
+    background: rgba(166, 166, 166, 1);
+    height: 10px;
+    width: 10px;
+    margin-right: 18px;
+}
+.map{
+    margin: auto;
+    margin-top: 71px;
+    margin-bottom: 14px;
+}
+.map_vertical-link{
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    color: #000;
+}
+.map_vertical-main img{
+    height: 16px;
+    margin-left: 2px;
+}
+.map__link .q{
+    height: 12px;
+    width: 12px;
+}
+.map__link a{
+    margin-left: 20px;
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    color: #000;
+}
+.map__link{
+    align-items: center;
+}
+.map_vertical-main{
+}
+.map_vertical-main a{
+    font-family: "Proxima Nova Bold";
+    font-size: 17px;
+    color: #000;
+    margin-left: 14px;
+    margin-top: 3px;
+}
+.map_title{
+    font-family: Raleway-Light;
+    font-size: 42px;
+}
+.map_vertical-main ul{
+    height: 40px;
+}
+.map_vertical-main ul li{
+    text-indent: -9999999px;
+}
+.map_last{
+    border: none;
+}
 @media screen and (min-width: 1024px){
     .subtop-left{
         flex-wrap: wrap;
