@@ -598,6 +598,57 @@ span, p, h1, h2, h3, h4, h5{
 .ads .ad{
     min-height: 294px;
 }
+.error{
+    margin: auto;
+    margin-top: 58px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.error-img{
+    width: 293px;
+    height: 277px;
+}
+.error_title{
+    font-family: Raleway-ExtraLight;
+    font-size: 98px;
+}
+.error_text{
+    font-size: 42px;
+    font-family: Raleway-Light;
+    margin-top: 22px;
+}
+.error_desc{
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    max-width: 642px;
+    margin-top: 15px;
+}
+.error_link img{
+    width: 16px;
+}
+.error_links{
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    width: 370px;
+    margin: auto;
+    margin-top: 33px;
+}
+.error_link a{
+    margin-left: 10px;
+}
+.error_home{
+    color: #660080;
+}
+.error_back{
+    color: #08a1c7;
+}
+.error_link{
+    display: flex;
+    align-items: center;
+}
+.back img{
+    height: 14px;
+}
 @media screen and (min-width: 1024px){
     .subtop-left{
         flex-wrap: wrap;
