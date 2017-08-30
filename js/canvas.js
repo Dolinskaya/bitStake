@@ -1,4 +1,12 @@
 'use strict';
+var myLineChart;
+var arr = [];
+function adddata(val, min, max){
+    myLineChart.data.datasets[0].data = val;
+    myLineChart.update();
+}
+// [5, 0.6, 3, 2.2, 2.4, 1.9, 2, 1, 1.8, 3.1, 3, 3.8, 6, 6, 4, 3.6, 2, 5, 4.8,4.5, 6.2, 5.9, 9.4]
+
 $(document).ready(function () {
     var canvas = document.getElementById('myChart');
     canvas.height = '143px';
@@ -67,18 +75,22 @@ $(document).ready(function () {
             }]
         },
     };
-    var myLineChart = new Chart (canvas, {
+    myLineChart = new Chart (canvas, {
         type: 'line',
         data:data,
         options:option
     });
-//      canvas.style.height = '163px';
     canvas.parentNode.style.height = '163px';
-//
-//      function adddata(){
-//          myLineChart.data.datasets[0].data[7] = 50;
-//          myLineChart.data.labels[7] = "test add";
-//          myLineChart.update();
-//      }
+
+    // arr.push($('.kard-name-links a'));
+    // arr = arr[0];
+    //
+    // $('.kard-name-links a').each(function () {
+    //     var len = arr.length;
+    //     var self = $(this);
+    //     for(var i = 0; i<len; i++){
+    //         self.data(i);
+    //     }
+    // });
 
 });

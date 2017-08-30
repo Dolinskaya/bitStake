@@ -32,6 +32,18 @@
     font-weight: 500;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('../../fonts/Raleway-Light.ttf');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src: url("../../fonts/Raleway-ExtraLight.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
 body{
     margin: 0;
     padding: 0;
@@ -111,9 +123,13 @@ span, p, h1, h2, h3, h4, h5{
     width: 486px;
 }
 .top__link-nav a{
+    color: #000;
     font-family: "Proxima Nova Light";
     font-size: 17px;
     margin-left: 10px;
+}
+.top__link-nav a:hover{
+    color: #08a1c7;
 }
 .top__links img{
     width: 16px;
@@ -129,11 +145,14 @@ span, p, h1, h2, h3, h4, h5{
     height: 36px;
 }
 .top__logo-text{
-    font-family: 'Raleway-Thin';
+    font-family: 'Raleway-Light';
     font-size: 23px;
     position: relative;
     left: 43px;
     top: -35px;
+}
+.top__logo-text span{
+    font-family: 'Raleway-Bold';
 }
 .info-date{
     margin-left: 20px;
@@ -203,15 +222,16 @@ span, p, h1, h2, h3, h4, h5{
     padding-bottom: 20px;
 }
 .left-content{
-    margin-top: 20px;
+    margin-top: 36px;
 }
 .title{
-    margin-top: 38px;
-    font-family: Raleway-Thin;
+    margin-top: 27px;
+    margin-left: -3px;
+    font-family: Raleway-Light;
     font-size: 42px;
 }
 .share{
-    margin-top: 33px;
+    margin-top: 23px;
 }
 .info-news img,
 .info-date img{
@@ -230,7 +250,7 @@ span, p, h1, h2, h3, h4, h5{
     font-family: "Proxima Nova Bold";
     font-size: 14px;
     color: #fff;
-    padding: 15px 37px 12px 37px;
+    padding: 15px 33px 12px 33px;
 }
 .share-at{
     background: rgb(102, 0, 128);
@@ -243,12 +263,12 @@ span, p, h1, h2, h3, h4, h5{
 }
 .text{
     width: 660px;
-    margin-top: 60px;
+    margin-top: 56px;
 }
 .text p{
     font-family: "Proxima Nova Light";
     font-size: 17px;
-    margin-top: 37px;
+    margin-top: 31px;
 }
 .quotes{
     position: relative;
@@ -356,7 +376,7 @@ span, p, h1, h2, h3, h4, h5{
 }
 .ad{
     background: rgb(255, 255, 255);
-    margin-top: 20px;
+    margin-top: 13px;
     padding: 20px;
     border: 1px solid rgb(222, 222, 222);
     cursor: pointer;
@@ -387,7 +407,10 @@ span, p, h1, h2, h3, h4, h5{
 }
 .right-content--img{
     height: 292px;
-    margin-top: 20px;
+    margin-top: 16px;
+}
+.right-content--img:last-of-type{
+    margin-top: 8px;
 }
 .ad_info-block span{
     font-family: "Proxima Nova Light";
@@ -511,7 +534,7 @@ span, p, h1, h2, h3, h4, h5{
         right: 0;
         position: absolute;
         background: #08a1c7;
-        height: 5px;
+        height: 4px;
         z-index: 20;
     }
     .burger-drop{
@@ -531,17 +554,17 @@ span, p, h1, h2, h3, h4, h5{
         content: '';
         width: 27px;
         background: #08a1c7;
-        height: 5px;
+        height: 4px;
         position: absolute;
-        top: 8px;
+        top: 12px;
     }
     .burger:after{
         content: '';
         width: 27px;
         background: #08a1c7;
-        height: 5px;
+        height: 4px;
         position: absolute;
-        bottom: 8px;
+        bottom: 12px;
     }
     .nav__mobile{
         background: #fff;
@@ -622,6 +645,7 @@ span, p, h1, h2, h3, h4, h5{
         position: relative;
         width: 668px;
         margin: auto;
+        height: 90px;
     }
     .share{
         width: 688px;
