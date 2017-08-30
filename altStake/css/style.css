@@ -218,7 +218,7 @@ span, p, h1, h2, h3, h4, h5{
     box-shadow: inset 0px 4px 5px 0px rgba(241,241,241,1);
 }
 .content{
-    width: 1060px;
+    width: 1057px;
     padding-bottom: 20px;
 }
 .left-content{
@@ -230,9 +230,7 @@ span, p, h1, h2, h3, h4, h5{
     max-width: 565px;
     font-family: Raleway-Light;
     font-size: 42px;
-}
-.start_img{
-    width: 662px;
+    line-height: 1em;
 }
 .share{
     margin-top: 23px;
@@ -367,7 +365,7 @@ span, p, h1, h2, h3, h4, h5{
     border: 1px solid rgb(222, 222, 222);
     padding: 20px;
     background: rgb(255, 255, 255);
-    min-height: 426px;
+    min-height: 481px;
     -webkit-box-shadow: 0px 3px 5px 0px rgba(237,237,237,1);
     -moz-box-shadow: 0px 3px 5px 0px rgba(237,237,237,1);
     box-shadow: 0px 3px 5px 0px rgba(237,237,237,1);
@@ -397,6 +395,7 @@ span, p, h1, h2, h3, h4, h5{
     max-width: 300px;
     margin: auto;
     text-align: left;
+    min-height: 81px;
 
 }
 .ad_title{
@@ -509,6 +508,95 @@ span, p, h1, h2, h3, h4, h5{
 }
 .none{
     display: none;
+}
+.start_img{
+    width: 659px;
+    margin-top: 21px;
+}
+.start_img + .text{
+    margin-top: -11px;
+}
+.main__block{
+    background: #fff;
+    border: 1px solid rgb(222, 222, 222);
+    padding: 20px;
+    margin-top: -17px;
+}
+.main__block .title{
+    margin-top: 0;
+}
+.main__block .info-wrap{
+    margin-top: 47px;
+}
+.main__block .ad_info{
+    margin-top: -2px;
+    width: auto;
+}
+.main__block .ad_info .ad_info-block{
+    margin-top: 0;
+}
+.main__block .ad_info .ad_info-block:last-of-type{
+    margin-left: 20px;
+}
+.search{
+    background: rgba(8, 161, 199, 1);
+    text-align: center;
+    margin-top: 19px;
+}
+.search-input{
+    position: relative;
+    width: 282px;
+    margin: auto;
+}
+.search-input img{
+    position: absolute;
+    right: 0;
+    height: 16px;
+    width: 16px;
+    top: 25px;
+}
+.search input{
+    background: transparent;
+    width: 282px;
+    margin: 25px 0 30px 0;
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    outline: none;
+    border: none;
+    padding-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(83, 189, 216, 0.5);
+}
+.search input::placeholder{
+    color: rgba(255, 255, 255, 0.9);
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+}
+.show_news{
+    width: 1057px;
+    margin: auto;
+    margin-bottom: 13px;
+    padding: 25px 0;
+    text-align: center;
+    align-items: center;
+    background: rgba(8, 161, 199, 1);
+}
+.show_news img{
+    height: 16px;
+    width: 16px;
+    margin-top: 3px;
+}
+.show_news p{
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    color: rgba(255, 255, 255, 1);
+}
+.show-wrapper{
+    margin: auto;
+    width: 252px;
+}
+.ads .ad{
+    min-height: 294px;
 }
 @media screen and (min-width: 1024px){
     .subtop-left{
@@ -1014,5 +1102,9 @@ span, p, h1, h2, h3, h4, h5{
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         box-shadow: none;
+    }
+    .main__block .text p{
+        width: 237px;
+        margin: 27px 0 0 0;
     }
 }
