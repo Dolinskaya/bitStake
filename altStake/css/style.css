@@ -557,7 +557,8 @@ span, p, h1, h2, h3, h4, h5{
 }
 .search input{
     background: transparent;
-    width: 282px;
+    /*width: 282px;*/
+    width: 100%;
     margin: 25px 0 30px 0;
     font-family: "Proxima Nova Light";
     font-size: 17px;
@@ -721,6 +722,116 @@ li .q{
 }
 .map_last{
     border: none;
+}
+.find{
+    flex-wrap: wrap;
+}
+.find-content{
+    width: 100%;
+    /*margin-top: 36px;*/
+}
+.find-block{
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(222, 222, 222, 1);
+    padding: 20px 25px;
+    width: 100%;
+}
+.find-block p{
+    display: inline-block;
+    font-family: "Proxima Nova Light";
+    font-size: 14px;
+    margin-left: 3px;
+}
+.response_text span{
+    font-family: "Proxima Nova Bold";
+}
+.find-content .search .search-input{
+    width: 998px;
+}
+.find_response{
+    margin-top: 20px;
+}
+.response_title{
+    font-family: Raleway-Light;
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+.response_title span{
+    color: #08a1c7;
+}
+.find-show{
+    width: 150px;
+}
+.find-breadcrumbs a{
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    color: #000;
+    border-bottom: 14px solid transparent;
+    padding-bottom: 4px;
+    margin-right: 29px;
+}
+
+/*применить при табе*/
+.active-result{
+    border-color: #08a1c7;
+}
+.find-breadcrumbs a:first-child{
+    font-family: "Proxima Nova Bold";
+}
+.find-breadcrumbs a:first-child span{
+    font-family: "Proxima Nova Light";
+}
+.find-breadcrumbs a span{
+    font-size: 14px;
+    color: #a6a6a6;
+}
+.find-breadcrumbs{
+    /*margin-top: 26px;*/
+    padding: 20px 25px 0 25px;
+    text-indent: 3px;
+}
+.result-img{
+    width: 213px;
+    height: 112px;
+}
+.find-result{
+    padding: 20px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-bottom: none;
+}
+.find-result:last-of-type{
+    border-bottom: 1px solid rgba(222, 222, 222, 1);
+}
+.result a{
+    font-family: "Proxima Nova Light";
+    color: #a6a6a6;
+    font-size: 14px;
+}
+.result a span{
+    color: #08a1c7;
+}
+.result-title{
+    font-family: "Proxima Nova Light";
+    font-size: 17px;
+    margin-top: 11px;
+}
+.result-text{
+    font-family: "Proxima Nova Light";
+    font-size: 14px;
+    color: #a6a6a6;
+    margin-top: 11px;
+}
+.result-text a{
+    color: #08a1c7;
+}
+.result{
+    margin-left: 29px;
+    margin-top: 5px;
+}
+.res-id>span{
+    font-family: "Proxima Nova Bold";
+    font-size: 14px;
 }
 @media screen and (min-width: 1024px){
     .subtop-left{
