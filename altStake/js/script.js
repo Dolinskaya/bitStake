@@ -5,6 +5,12 @@ function handleReplace(href){
 }
     $(document).ready(function () {
         $('.top-images').on('hover', 'a img', function () {
+            console.log('test upgrade!')
            handleReplace($(this).attr('href'));
         });
     });
+
+
+// $( document ).ready(function() {
+//     console.log( "ready!" );
+// });
